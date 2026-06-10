@@ -1,0 +1,228 @@
+{
+  "categories": [
+    {
+      "id": "signature",
+      "name": "Signature",
+      "description": "Our chef's most celebrated creations"
+    },
+    {
+      "id": "appetizer",
+      "name": "Appetizer",
+      "description": "Light beginnings to awaken the palate"
+    },
+    {
+      "id": "main",
+      "name": "Main Course",
+      "description": "Heritage recipes reimagined with modern technique"
+    },
+    {
+      "id": "seafood",
+      "name": "Seafood",
+      "description": "Fresh catches prepared with coastal mastery"
+    },
+    {
+      "id": "dessert",
+      "name": "Dessert",
+      "description": "Sweet conclusions to an extraordinary meal"
+    },
+    {
+      "id": "beverage",
+      "name": "Beverage",
+      "description": "Curated drinks to complement every dish"
+    }
+  ],
+  "items": [
+    {
+      "id": "1",
+      "categoryId": "signature",
+      "name": "Rendang Wagyu Premium",
+      "description": "Australian Wagyu beef slow-cooked 8 hours in 23 aromatic spices. Served with steamed rice and pickled vegetables.",
+      "price": 285000,
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=85",
+      "badge": "Best Seller",
+      "isSpicy": true,
+      "isHalal": true,
+      "isVegetarian": false
+    },
+    {
+      "id": "2",
+      "categoryId": "signature",
+      "name": "Lobster Bakar Saus Bumbu",
+      "description": "Whole grilled lobster with a secret blend of Javanese spices and herb butter. A coastal masterpiece.",
+      "price": 450000,
+      "image": "https://images.unsplash.com/photo-1559742811-822873691df8?w=600&q=85",
+      "badge": "Chef's Choice",
+      "isSpicy": false,
+      "isHalal": true,
+      "isVegetarian": false
+    },
+    {
+      "id": "3",
+      "categoryId": "signature",
+      "name": "Ayam Betutu Royal",
+      "description": "Whole free-range chicken marinated in Balinese base genep spices, wrapped in banana leaf and slow-roasted.",
+      "price": 195000,
+      "image": "https://images.unsplash.com/photo-1598103442097-8b74394b95c9?w=600&q=85",
+      "badge": "Heritage",
+      "isSpicy": true,
+      "isHalal": true,
+      "isVegetarian": false
+    },
+    {
+      "id": "4",
+      "categoryId": "appetizer",
+      "name": "Soto Betawi Klasik",
+      "description": "Rich coconut milk beef soup with potatoes, tomatoes, emping crackers, and a squeeze of lime.",
+      "price": 65000,
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=85",
+      "badge": null,
+      "isSpicy": false,
+      "isHalal": true,
+      "isVegetarian": false
+    },
+    {
+      "id": "5",
+      "categoryId": "appetizer",
+      "name": "Gado-Gado Nusantara",
+      "description": "Mixed vegetables and tofu in our signature peanut sauce. Elegant simplicity at its finest.",
+      "price": 55000,
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=85",
+      "badge": "Vegetarian",
+      "isSpicy": false,
+      "isHalal": true,
+      "isVegetarian": true
+    },
+    {
+      "id": "6",
+      "categoryId": "appetizer",
+      "name": "Kerak Telor Premium",
+      "description": "Jakarta's iconic sticky rice omelette with dried shrimp, toasted coconut and shallots.",
+      "price": 75000,
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=85",
+      "badge": "Heritage",
+      "isSpicy": false,
+      "isHalal": true,
+      "isVegetarian": false
+    },
+    {
+      "id": "7",
+      "categoryId": "main",
+      "name": "Nasi Goreng Istana",
+      "description": "Fragrant wok-fried rice with premium shrimp paste, served with satay, crackers and a perfectly fried egg.",
+      "price": 125000,
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=85",
+      "badge": "Best Seller",
+      "isSpicy": true,
+      "isHalal": true,
+      "isVegetarian": false
+    },
+    {
+      "id": "8",
+      "categoryId": "main",
+      "name": "Sate Maranggi Wagyu",
+      "description": "Premium Wagyu skewers marinated in sweet soy and galangal, grilled over charcoal to perfection.",
+      "price": 175000,
+      "image": "https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600&q=85",
+      "badge": "Premium",
+      "isSpicy": false,
+      "isHalal": true,
+      "isVegetarian": false
+    },
+    {
+      "id": "9",
+      "categoryId": "main",
+      "name": "Gulai Kambing Muda",
+      "description": "Young goat curry in golden turmeric-spiced coconut milk, slow-cooked until the meat falls from the bone.",
+      "price": 155000,
+      "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=85",
+      "badge": null,
+      "isSpicy": true,
+      "isHalal": true,
+      "isVegetarian": false
+    },
+    {
+      "id": "10",
+      "categoryId": "seafood",
+      "name": "Ikan Bakar Jimbaran",
+      "description": "Whole grilled sea bass marinated in Balinese Jimbaran sauce. Served on banana leaf with plecing sambal.",
+      "price": 220000,
+      "image": "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=600&q=85",
+      "badge": "Chef's Choice",
+      "isSpicy": true,
+      "isHalal": true,
+      "isVegetarian": false
+    },
+    {
+      "id": "11",
+      "categoryId": "seafood",
+      "name": "Udang Galah Saus Padang",
+      "description": "Giant river prawns in a bold Padang-style chili sauce. Rich, complex, and gloriously spicy.",
+      "price": 195000,
+      "image": "https://images.unsplash.com/photo-1563557765-5a0b56a0f1d7?w=600&q=85",
+      "badge": "Spicy",
+      "isSpicy": true,
+      "isHalal": true,
+      "isVegetarian": false
+    },
+    {
+      "id": "12",
+      "categoryId": "seafood",
+      "name": "Cumi Cabe Hijau",
+      "description": "Fresh squid stir-fried in aromatic green chili sauce with basil and kaffir lime leaves.",
+      "price": 145000,
+      "image": "https://images.unsplash.com/photo-1607330289024-1535c6b4e1c1?w=600&q=85",
+      "badge": null,
+      "isSpicy": true,
+      "isHalal": true,
+      "isVegetarian": false
+    },
+    {
+      "id": "13",
+      "categoryId": "dessert",
+      "name": "Klepon Royal",
+      "description": "Premium pandan rice balls with liquid palm sugar center, rolled in freshly grated coconut. A Javanese treasure.",
+      "price": 45000,
+      "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=85",
+      "badge": "Heritage",
+      "isSpicy": false,
+      "isHalal": true,
+      "isVegetarian": true
+    },
+    {
+      "id": "14",
+      "categoryId": "dessert",
+      "name": "Es Krim Pandan Santan",
+      "description": "House-made pandan coconut ice cream with caramelized palm sugar drizzle and toasted coconut flakes.",
+      "price": 65000,
+      "image": "https://images.unsplash.com/photo-1488900128323-21503983a07e?w=600&q=85",
+      "badge": "Signature",
+      "isSpicy": false,
+      "isHalal": true,
+      "isVegetarian": true
+    },
+    {
+      "id": "15",
+      "categoryId": "beverage",
+      "name": "Jamu Nusantara Blend",
+      "description": "A warming blend of turmeric, ginger, lemongrass and honey. Traditional wellness in a beautiful glass.",
+      "price": 35000,
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=85",
+      "badge": "Wellness",
+      "isSpicy": false,
+      "isHalal": true,
+      "isVegetarian": true
+    },
+    {
+      "id": "16",
+      "categoryId": "beverage",
+      "name": "Es Teh Nasgitel",
+      "description": "Javanese-style strong sweet iced tea, perfectly balanced. A classic companion to every meal.",
+      "price": 25000,
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=85",
+      "badge": null,
+      "isSpicy": false,
+      "isHalal": true,
+      "isVegetarian": true
+    }
+  ]
+}

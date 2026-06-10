@@ -1,0 +1,139 @@
+{
+  "name": "Nusantara Dining",
+  "tagline": "Where Heritage Meets Refinement",
+  "description": "An extraordinary culinary journey through Indonesia's finest flavors, presented with modern elegance and timeless hospitality.",
+  "shortDescription": "Premium Indonesian cuisine in an elegant setting",
+  "theme": "steakhouse",
+  "logo": {
+    "text": "Nusantara",
+    "subtext": "DINING",
+    "image": null
+  },
+  "hero": {
+    "headline": "An Extraordinary",
+    "headlineAccent": "Culinary Journey",
+    "subheadline": "Experience the finest Indonesian cuisine, meticulously crafted from heritage recipes and the freshest local ingredients.",
+    "backgroundImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=90",
+    "backgroundImageMobile": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=768&q=85"
+  },
+  "signatureDish": {
+    "enabled": true,
+    "name": "Rendang Wagyu Premium",
+    "subtitle": "Signature Collection",
+    "description": "Tender Australian Wagyu beef slow-cooked for 8 hours in a rich blend of 23 aromatic spices. A culinary masterpiece that honors centuries of Minangkabau tradition.",
+    "price": "Rp 285.000",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&q=90",
+    "badges": ["Chef's Favorite", "8 Hours Slow-Cooked", "Premium Wagyu"]
+  },
+  "about": {
+    "heading": "A Story of Passion",
+    "headingAccent": "& Heritage",
+    "story": "Founded in 2018 by Chef Arief Santoso, Nusantara Dining was born from a singular vision: to elevate Indonesian cuisine to its rightful place among the world's great culinary traditions.",
+    "mission": "We believe that every dish tells a story — of the farmers who grew the ingredients, the generations who perfected the recipes, and the artisans who bring it all to life in our kitchen.",
+    "values": [
+      {
+        "icon": "leaf",
+        "title": "Farm-to-Table",
+        "description": "We partner with 40+ local farms across Java and Bali"
+      },
+      {
+        "icon": "star",
+        "title": "Heritage Recipes",
+        "description": "Authentic recipes passed down through generations"
+      },
+      {
+        "icon": "users",
+        "title": "Expert Team",
+        "description": "15 award-winning chefs with international training"
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200&q=90",
+    "stats": [
+      { "number": "8+", "label": "Years of Excellence" },
+      { "number": "50K+", "label": "Happy Guests" },
+      { "number": "23", "label": "Heritage Spices" },
+      { "number": "40+", "label": "Farm Partners" }
+    ]
+  },
+  "facilities": [
+    {
+      "id": "vip-room",
+      "name": "VIP Private Dining",
+      "description": "Intimate private rooms for exclusive gatherings, corporate dinners, and special celebrations.",
+      "capacity": "Up to 20 guests",
+      "icon": "crown",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=85",
+      "features": ["Private entrance", "Dedicated butler service", "Custom menu", "AV equipment"]
+    },
+    {
+      "id": "family-area",
+      "name": "Family Dining Hall",
+      "description": "Spacious, warm ambience designed for family gatherings with comfortable seating for all ages.",
+      "capacity": "Up to 150 guests",
+      "icon": "users",
+      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=85",
+      "features": ["Kids menu available", "High chairs", "Spacious layout", "Natural lighting"]
+    },
+    {
+      "id": "outdoor",
+      "name": "Garden Terrace",
+      "description": "Al fresco dining surrounded by lush tropical gardens. Perfect for romantic dinners and relaxed lunches.",
+      "capacity": "Up to 60 guests",
+      "icon": "trees",
+      "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=85",
+      "features": ["Open air", "Garden views", "Natural ambience", "Twilight dining"]
+    },
+    {
+      "id": "prayer-room",
+      "name": "Prayer Room",
+      "description": "A clean, serene space for our Muslim guests to perform their prayers in comfort and peace.",
+      "capacity": "Up to 15 persons",
+      "icon": "moon",
+      "image": "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=85",
+      "features": ["Prayer mats provided", "Ablution area", "Qibla direction marked", "Private space"]
+    },
+    {
+      "id": "parking",
+      "name": "Ample Parking",
+      "description": "Secure, spacious parking for over 100 vehicles with valet service available upon request.",
+      "capacity": "100+ vehicles",
+      "icon": "car",
+      "image": "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800&q=85",
+      "features": ["Free parking", "Valet service", "CCTV monitored", "Easy access"]
+    },
+    {
+      "id": "event-hall",
+      "name": "Grand Event Hall",
+      "description": "A magnificent venue for weddings, corporate events, and grand celebrations with full audio-visual support.",
+      "capacity": "Up to 500 guests",
+      "icon": "sparkles",
+      "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=85",
+      "features": ["Full AV system", "Stage & podium", "Dedicated coordinator", "Custom decoration"]
+    }
+  ],
+  "location": {
+    "address": "Jl. Sudirman No. 123, Jakarta Pusat 10220",
+    "city": "Jakarta",
+    "country": "Indonesia",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322295!2d106.8195613!3d-6.1944491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sMonas!5e0!3m2!1sen!2sid!4v1699999999999!5m2!1sen!2sid",
+    "phone": "+62 21 1234 5678",
+    "whatsapp": "+6281234567890",
+    "email": "reservations@nusantaradining.com",
+    "hours": [
+      { "days": "Monday – Friday", "open": "11:00", "close": "22:00" },
+      { "days": "Saturday", "open": "10:00", "close": "23:00" },
+      { "days": "Sunday", "open": "10:00", "close": "21:00" }
+    ],
+    "socialMedia": {
+      "instagram": "https://instagram.com/nusantaradining",
+      "facebook": "https://facebook.com/nusantaradining",
+      "tiktok": "https://tiktok.com/@nusantaradining"
+    }
+  },
+  "seo": {
+    "title": "Nusantara Dining — Premium Indonesian Restaurant Jakarta",
+    "description": "Experience Indonesia's finest heritage cuisine in an elegant setting. Reserve your table at Nusantara Dining, Jakarta's premier destination for authentic Indonesian flavors.",
+    "keywords": "restaurant jakarta, indonesian cuisine, premium dining, catering jakarta, nusantara dining",
+    "ogImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=90"
+  }
+}

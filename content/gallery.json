@@ -1,0 +1,97 @@
+{
+  "heading": "A Feast for the Eyes",
+  "subheading": "Every dish is a work of art. Every moment, a memory worth keeping.",
+  "items": [
+    {
+      "id": "1",
+      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=85",
+      "alt": "Elegant dining room ambience",
+      "category": "ambience",
+      "span": "large"
+    },
+    {
+      "id": "2",
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=85",
+      "alt": "Rendang Wagyu Premium",
+      "category": "food",
+      "span": "small"
+    },
+    {
+      "id": "3",
+      "image": "https://images.unsplash.com/photo-1559742811-822873691df8?w=600&q=85",
+      "alt": "Lobster grilled with spices",
+      "category": "food",
+      "span": "small"
+    },
+    {
+      "id": "4",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=85",
+      "alt": "VIP private dining room",
+      "category": "ambience",
+      "span": "medium"
+    },
+    {
+      "id": "5",
+      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=85",
+      "alt": "Restaurant interior",
+      "category": "ambience",
+      "span": "medium"
+    },
+    {
+      "id": "6",
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=85",
+      "alt": "Nasi Goreng Istana",
+      "category": "food",
+      "span": "small"
+    },
+    {
+      "id": "7",
+      "image": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&q=85",
+      "alt": "Chef preparing a dish",
+      "category": "kitchen",
+      "span": "large"
+    },
+    {
+      "id": "8",
+      "image": "https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600&q=85",
+      "alt": "Sate Maranggi Wagyu",
+      "category": "food",
+      "span": "small"
+    },
+    {
+      "id": "9",
+      "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=85",
+      "alt": "Garden terrace dining",
+      "category": "ambience",
+      "span": "small"
+    },
+    {
+      "id": "10",
+      "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=85",
+      "alt": "Wedding event setup",
+      "category": "events",
+      "span": "medium"
+    },
+    {
+      "id": "11",
+      "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=85",
+      "alt": "Klepon dessert",
+      "category": "food",
+      "span": "small"
+    },
+    {
+      "id": "12",
+      "image": "https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=85",
+      "alt": "Catering buffet setup",
+      "category": "events",
+      "span": "medium"
+    }
+  ],
+  "categories": [
+    { "id": "all", "name": "All" },
+    { "id": "food", "name": "Food" },
+    { "id": "ambience", "name": "Ambience" },
+    { "id": "kitchen", "name": "Kitchen" },
+    { "id": "events", "name": "Events" }
+  ]
+}

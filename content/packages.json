@@ -1,0 +1,123 @@
+{
+  "rotatingWords": [
+    "Prasmanan",
+    "Set Menu",
+    "Coffee Break",
+    "Catering",
+    "Nasi Kotak",
+    "Wedding",
+    "Corporate"
+  ],
+  "heading": "We Provide",
+  "subheading": "Premium catering solutions for every occasion — crafted with the same excellence as our restaurant experience.",
+  "packages": [
+    {
+      "id": "prasmanan",
+      "name": "Prasmanan Premium",
+      "subtitle": "Buffet Style",
+      "description": "An abundant spread of our finest dishes, elegantly arranged for your guests to serve themselves. Perfect for corporate events and family gatherings.",
+      "priceFrom": 85000,
+      "priceUnit": "per person",
+      "minGuests": 50,
+      "image": "https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=85",
+      "highlight": false,
+      "features": [
+        "Minimum 50 persons",
+        "15 dish selections",
+        "Professional serving staff",
+        "Complete cutlery setup",
+        "2 dessert options",
+        "Free site survey"
+      ],
+      "includes": ["Setup & teardown", "Serving staff", "Equipment rental", "Basic decoration"]
+    },
+    {
+      "id": "set-menu",
+      "name": "Set Menu Eksklusif",
+      "subtitle": "Plated Service",
+      "description": "A curated multi-course dining experience brought directly to your guests. Elegant plated service for sophisticated events.",
+      "priceFrom": 145000,
+      "priceUnit": "per person",
+      "minGuests": 30,
+      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=85",
+      "highlight": true,
+      "badge": "Most Popular",
+      "features": [
+        "Minimum 30 persons",
+        "4-course meal",
+        "Dedicated service team",
+        "Premium plating",
+        "Menu consultation",
+        "Complimentary welcome drink"
+      ],
+      "includes": ["Full service team", "Premium tableware", "Menu cards", "Table decoration"]
+    },
+    {
+      "id": "coffee-break",
+      "name": "Coffee Break Package",
+      "subtitle": "Meeting & Conference",
+      "description": "Refined refreshments for meetings, seminars, and conferences. Keep your attendees energized and impressed.",
+      "priceFrom": 55000,
+      "priceUnit": "per person",
+      "minGuests": 20,
+      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=85",
+      "highlight": false,
+      "features": [
+        "Minimum 20 persons",
+        "Hot & cold beverages",
+        "5 snack selections",
+        "Replenishment service",
+        "Napkins & plates",
+        "2-session option available"
+      ],
+      "includes": ["Beverage station", "Snack display", "Service staff", "Setup & cleanup"]
+    },
+    {
+      "id": "nasi-kotak",
+      "name": "Nasi Kotak Signature",
+      "subtitle": "Box Meal",
+      "description": "Our signature box meals, beautifully packaged and bursting with flavor. Ideal for large-scale events with logistical simplicity.",
+      "priceFrom": 45000,
+      "priceUnit": "per box",
+      "minGuests": 100,
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=85",
+      "highlight": false,
+      "features": [
+        "Minimum 100 boxes",
+        "Main + 3 side dishes",
+        "Premium eco packaging",
+        "Free delivery (area)",
+        "Custom label printing",
+        "Temperature guaranteed"
+      ],
+      "includes": ["Branded packaging", "Delivery (radius 15km)", "Custom branding", "Halal certified"]
+    },
+    {
+      "id": "wedding",
+      "name": "Wedding Package",
+      "subtitle": "Celebration",
+      "description": "Make your most important day truly unforgettable. Our wedding package combines exquisite cuisine with flawless service.",
+      "priceFrom": 225000,
+      "priceUnit": "per person",
+      "minGuests": 100,
+      "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=85",
+      "highlight": false,
+      "badge": "Premium",
+      "features": [
+        "Minimum 100 persons",
+        "Full buffet or set menu",
+        "Dedicated wedding coordinator",
+        "Floral centerpieces",
+        "Wedding cake (optional)",
+        "Sound system included"
+      ],
+      "includes": ["Full decoration", "Sound system", "Lighting setup", "Coordinator", "Photo spots"]
+    }
+  ],
+  "cta": {
+    "heading": "Custom Package Available",
+    "description": "Don't see exactly what you need? Our events team will create a bespoke package tailored to your vision and budget.",
+    "buttonText": "Discuss Your Event",
+    "whatsappMessage": "Halo, saya ingin mendiskusikan paket catering untuk acara saya."
+  }
+}
