@@ -26,8 +26,16 @@ export default function TestimonialsSection() {
   }, [items.length])
 
   useEffect(() => {
-    const timer = setInterval(next, 5000)
-    return () => clearInterval(timer)
+    let timer = setInterval(next, 5000)
+    const handleVisibility = () => {
+      clearInterval(timer)
+      if (!document.hidden) timer = setInterval(next, 5000)
+    }
+    document.addEventListener('visibilitychange', handleVisibility)
+    return () => {
+      clearInterval(timer)
+      document.removeEventListener('visibilitychange', handleVisibility)
+    }
   }, [next])
 
   const variants = {
@@ -100,6 +108,7 @@ export default function TestimonialsSection() {
           {/* Carousel */}
           <div className="relative max-w-3xl mx-auto">
             <div
+              role="region"
               className="overflow-hidden"
               aria-live="polite"
               aria-roledescription="carousel"

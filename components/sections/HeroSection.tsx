@@ -75,26 +75,28 @@ export default function HeroSection() {
             </motion.div>
 
             {/* Headline */}
-            <div className="overflow-hidden mb-2">
-              <motion.h1
-                initial={{ y: '100%' }}
-                animate={{ y: '0%' }}
-                transition={{ duration: 1, delay: 0.35, ease: [0.77, 0, 0.175, 1] }}
-                className="heading-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white"
-              >
-                {hero.headline}
-              </motion.h1>
-            </div>
-            <div className="overflow-hidden mb-8">
-              <motion.h1
-                initial={{ y: '100%' }}
-                animate={{ y: '0%' }}
-                transition={{ duration: 1, delay: 0.5, ease: [0.77, 0, 0.175, 1] }}
-                className="heading-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl gradient-text"
-              >
-                {hero.headlineAccent}
-              </motion.h1>
-            </div>
+            <h1 className="heading-display text-4xl sm:text-5xl lg:text-7xl xl:text-8xl mb-8">
+              <div className="overflow-hidden mb-2">
+                <motion.span
+                  initial={{ y: '100%' }}
+                  animate={{ y: '0%' }}
+                  transition={{ duration: 1, delay: 0.35, ease: [0.77, 0, 0.175, 1] }}
+                  className="block text-white"
+                >
+                  {hero.headline}
+                </motion.span>
+              </div>
+              <div className="overflow-hidden">
+                <motion.span
+                  initial={{ y: '100%' }}
+                  animate={{ y: '0%' }}
+                  transition={{ duration: 1, delay: 0.5, ease: [0.77, 0, 0.175, 1] }}
+                  className="block gradient-text"
+                >
+                  {hero.headlineAccent}
+                </motion.span>
+              </div>
+            </h1>
 
             {/* Subheadline */}
             <motion.p

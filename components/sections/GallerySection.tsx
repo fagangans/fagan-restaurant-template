@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
@@ -13,6 +13,17 @@ export default function GallerySection() {
   const [activeFilter, setActiveFilter] = useState('all')
   const [lightboxItem, setLightboxItem] = useState<(typeof gallery.items)[0] | null>(null)
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true })
+  const closeButtonRef = useRef<HTMLButtonElement>(null)
+
+  useEffect(() => {
+    if (!lightboxItem) return
+    closeButtonRef.current?.focus()
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setLightboxItem(null)
+    }
+    document.addEventListener('keydown', handleKey)
+    return () => document.removeEventListener('keydown', handleKey)
+  }, [lightboxItem])
 
   const filtered =
     activeFilter === 'all'
@@ -110,7 +121,12 @@ export default function GallerySection() {
                   role="button"
                   tabIndex={0}
                   aria-label={interpolate(t.gallery.ariaViewItem, { alt: item.alt })}
-                  onKeyDown={(e) => e.key === 'Enter' && setLightboxItem(item)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault()
+                      setLightboxItem(item)
+                    }
+                  }}
                 >
                   <div
                     className={`relative overflow-hidden ${
@@ -165,7 +181,7 @@ export default function GallerySection() {
               onClick={(e) => e.stopPropagation()}
             >
               <Image
-                src={lightboxItem.image.replace('w=600', 'w=1200').replace('w=800', 'w=1600')}
+                src={lightboxItem.image.replace(/w=\d+/, 'w=1600')}
                 alt={lightboxItem.alt}
                 fill
                 className="object-contain"
@@ -174,6 +190,7 @@ export default function GallerySection() {
               />
             </motion.div>
             <button
+              ref={closeButtonRef}
               onClick={() => setLightboxItem(null)}
               className="absolute top-4 right-4 w-10 h-10 bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
               aria-label={t.gallery.ariaCloseLightbox}

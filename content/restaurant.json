@@ -121,9 +121,24 @@
     "whatsapp": "+6281234567890",
     "email": "reservations@nusantaradining.com",
     "hours": [
-      { "days": "Monday – Friday", "open": "11:00", "close": "22:00" },
-      { "days": "Saturday", "open": "10:00", "close": "23:00" },
-      { "days": "Sunday", "open": "10:00", "close": "21:00" }
+      {
+        "days": "Monday – Friday",
+        "schemaOrgDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "open": "11:00",
+        "close": "22:00"
+      },
+      {
+        "days": "Saturday",
+        "schemaOrgDays": ["Saturday"],
+        "open": "10:00",
+        "close": "23:00"
+      },
+      {
+        "days": "Sunday",
+        "schemaOrgDays": ["Sunday"],
+        "open": "10:00",
+        "close": "21:00"
+      }
     ],
     "socialMedia": {
       "instagram": "https://instagram.com/nusantaradining",
@@ -135,6 +150,9 @@
     "title": "Nusantara Dining — Premium Indonesian Restaurant Jakarta",
     "description": "Experience Indonesia's finest heritage cuisine in an elegant setting. Reserve your table at Nusantara Dining, Jakarta's premier destination for authentic Indonesian flavors.",
     "keywords": "restaurant jakarta, indonesian cuisine, premium dining, catering jakarta, nusantara dining",
-    "ogImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=90"
+    "ogImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=90",
+    "siteUrl": "",
+    "servesCuisine": "Indonesian",
+    "priceRange": "$$"
   }
 }

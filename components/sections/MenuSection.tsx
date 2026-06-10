@@ -9,7 +9,7 @@ import { menu, formatPrice, t } from '@/lib/config'
 import { fadeUp, staggerContainer } from '@/lib/utils'
 
 export default function MenuSection() {
-  const [activeCategory, setActiveCategory] = useState(menu.categories[0].id)
+  const [activeCategory, setActiveCategory] = useState(menu.categories[0]?.id ?? '')
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true })
 
   const filteredItems = menu.items.filter((item) => item.categoryId === activeCategory)

@@ -97,9 +97,3 @@ export const themes: Record<ThemeName, Theme> = {
   },
 }
 
-export function getThemeCssVars(themeName: ThemeName): string {
-  const theme = themes[themeName]
-  return Object.entries(theme.cssVars)
-    .map(([key, value]) => `${key}: ${value};`)
-    .join('\n  ')
-}

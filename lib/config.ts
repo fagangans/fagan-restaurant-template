@@ -3,7 +3,7 @@ import menuData from '@/content/menu.json'
 import packagesData from '@/content/packages.json'
 import galleryData from '@/content/gallery.json'
 import testimonialsData from '@/content/testimonials.json'
-import type { ThemeName } from './themes'
+import { themes, type ThemeName } from './themes'
 import { getTranslations, type Locale } from './i18n'
 
 export const restaurant = restaurantData
@@ -12,21 +12,30 @@ export const packages = packagesData
 export const gallery = galleryData
 export const testimonials = testimonialsData
 
-export const theme = (restaurant.theme as ThemeName) || 'steakhouse'
+const rawTheme = restaurant.theme
+export const theme: ThemeName = rawTheme in themes
+  ? (rawTheme as ThemeName)
+  : 'steakhouse'
+
 export const locale = (restaurant.language as Locale) || 'id'
 export const t = getTranslations(locale)
 
 export function formatPrice(price: number): string {
-  return new Intl.NumberFormat('id-ID', {
-    style: 'currency',
-    currency: 'IDR',
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(price)
+  try {
+    return new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    }).format(price)
+  } catch {
+    return `Rp ${price.toLocaleString()}`
+  }
 }
 
 export function getWhatsAppUrl(message?: string): string {
-  const phone = restaurant.location.whatsapp.replace(/[^0-9]/g, '')
+  const phone = restaurant.location.whatsapp?.replace(/[^0-9]/g, '') ?? ''
+  if (!phone) return '#'
   const defaultMsg = locale === 'en'
     ? `Hello ${restaurant.name}, I'd like to make a table reservation.`
     : `Halo ${restaurant.name}, saya ingin membuat reservasi meja.`

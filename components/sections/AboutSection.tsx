@@ -83,16 +83,10 @@ export default function AboutSection() {
                 variants={fadeUp}
                 custom={0.1}
                 id="about-heading"
-                className="heading-display text-4xl lg:text-5xl xl:text-6xl text-white mb-2"
+                className="heading-display text-4xl lg:text-5xl xl:text-6xl mb-8"
               >
-                {about.heading}
-              </motion.h2>
-              <motion.h2
-                variants={fadeUp}
-                custom={0.15}
-                className="heading-display text-4xl lg:text-5xl xl:text-6xl gradient-text mb-8"
-              >
-                {about.headingAccent}
+                <span className="text-white">{about.heading}</span>{' '}
+                <span className="gradient-text">{about.headingAccent}</span>
               </motion.h2>
 
               <motion.p

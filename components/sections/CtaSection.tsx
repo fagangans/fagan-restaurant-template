@@ -57,16 +57,10 @@ export default function CtaSection() {
             <motion.h2
               variants={fadeUp}
               custom={0.1}
-              className="heading-display text-5xl lg:text-6xl xl:text-7xl text-white mb-6"
+              className="heading-display text-5xl lg:text-6xl xl:text-7xl mb-8"
             >
-              {t.cta.heading}
-            </motion.h2>
-            <motion.h2
-              variants={fadeUp}
-              custom={0.15}
-              className="heading-display text-5xl lg:text-6xl xl:text-7xl gradient-text mb-8"
-            >
-              {t.cta.headingAccent}
+              <span className="text-white">{t.cta.heading}</span>{' '}
+              <span className="gradient-text">{t.cta.headingAccent}</span>
             </motion.h2>
 
             <motion.p

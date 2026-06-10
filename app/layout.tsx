@@ -1,9 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
-import { restaurant, locale } from '@/lib/config'
+import { restaurant, locale, theme } from '@/lib/config'
 import { themes } from '@/lib/themes'
-import type { ThemeName } from '@/lib/themes'
 import SmoothScrollProvider from '@/components/providers/SmoothScrollProvider'
 
 const inter = Inter({
@@ -26,22 +25,31 @@ const cormorant = Cormorant_Garamond({
 })
 
 const { seo } = restaurant
-const themeName = (restaurant.theme as ThemeName) || 'steakhouse'
-const themeVars = themes[themeName]?.cssVars || {}
-const cssVarString = Object.entries(themeVars)
-  .map(([k, v]) => `${k}: ${v}`)
-  .join('; ')
+const themeVars = themes[theme]?.cssVars ?? {}
+const siteUrl = seo.siteUrl || undefined
+
+const schemaOrgDayMap: Record<string, string> = {
+  Monday: 'https://schema.org/Monday',
+  Tuesday: 'https://schema.org/Tuesday',
+  Wednesday: 'https://schema.org/Wednesday',
+  Thursday: 'https://schema.org/Thursday',
+  Friday: 'https://schema.org/Friday',
+  Saturday: 'https://schema.org/Saturday',
+  Sunday: 'https://schema.org/Sunday',
+}
 
 export const metadata: Metadata = {
   title: seo.title,
   description: seo.description,
   keywords: seo.keywords,
+  ...(siteUrl && { alternates: { canonical: siteUrl } }),
   openGraph: {
     title: seo.title,
     description: seo.description,
     images: [{ url: seo.ogImage, width: 1200, height: 630 }],
     type: 'website',
     locale: locale === 'en' ? 'en_US' : 'id_ID',
+    ...(siteUrl && { url: siteUrl }),
   },
   twitter: {
     card: 'summary_large_image',
@@ -85,13 +93,15 @@ export default function RootLayout({
               },
               telephone: restaurant.location.phone,
               email: restaurant.location.email,
-              url: '',
+              ...(siteUrl && { url: siteUrl }),
               image: restaurant.hero.backgroundImage,
-              servesCuisine: 'Indonesian',
-              priceRange: '$$',
+              servesCuisine: seo.servesCuisine,
+              priceRange: seo.priceRange,
               openingHoursSpecification: restaurant.location.hours.map((h) => ({
                 '@type': 'OpeningHoursSpecification',
-                dayOfWeek: h.days,
+                dayOfWeek: h.schemaOrgDays.map(
+                  (d) => schemaOrgDayMap[d] ?? `https://schema.org/${d}`
+                ),
                 opens: h.open,
                 closes: h.close,
               })),
@@ -99,7 +109,13 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="noise-texture">
+      <body className="noise-texture pb-14 lg:pb-0">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-[var(--color-accent)] focus:text-[var(--color-surface)] focus:px-4 focus:py-2 focus:text-sm focus:font-sans"
+        >
+          Skip to main content
+        </a>
         <SmoothScrollProvider>
           {children}
         </SmoothScrollProvider>
