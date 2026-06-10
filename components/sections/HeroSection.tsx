@@ -4,7 +4,7 @@ import { useRef } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
-import { restaurant } from '@/lib/config'
+import { restaurant, t } from '@/lib/config'
 
 export default function HeroSection() {
   const ref = useRef<HTMLElement>(null)
@@ -33,7 +33,7 @@ export default function HeroSection() {
       ref={ref}
       id="hero"
       className="relative h-screen min-h-[600px] flex items-center overflow-hidden"
-      aria-label="Hero section"
+      aria-label={t.hero.ariaSection}
     >
       {/* Background Image with Parallax */}
       <motion.div
@@ -116,16 +116,16 @@ export default function HeroSection() {
               <button
                 onClick={scrollToReserve}
                 className="btn-primary"
-                aria-label="Reserve a table"
+                aria-label={t.hero.ariaReserve}
               >
-                Reserve Table
+                {t.hero.reserveTable}
               </button>
               <button
                 onClick={scrollToMenu}
                 className="btn-secondary"
-                aria-label="Explore our menu"
+                aria-label={t.hero.ariaExploreMenu}
               >
-                Explore Menu
+                {t.hero.exploreMenu}
               </button>
             </motion.div>
           </div>
@@ -139,9 +139,9 @@ export default function HeroSection() {
         transition={{ delay: 1.5, duration: 0.8 }}
         onClick={scrollToMenu}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 group"
-        aria-label="Scroll down"
+        aria-label={t.hero.ariaScrollDown}
       >
-        <span className="text-label text-stone-500 text-[9px] tracking-[0.3em]">Scroll</span>
+        <span className="text-label text-stone-500 text-[9px] tracking-[0.3em]">{t.hero.scroll}</span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}

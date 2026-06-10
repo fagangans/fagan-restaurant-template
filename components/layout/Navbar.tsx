@@ -3,15 +3,15 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
-import { restaurant } from '@/lib/config'
+import { restaurant, t } from '@/lib/config'
 import { cn } from '@/lib/utils'
 
 const navLinks = [
-  { label: 'Menu', href: '#menu' },
-  { label: 'Packages', href: '#packages' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#location' },
+  { key: 'menu' as const, href: '#menu' },
+  { key: 'packages' as const, href: '#packages' },
+  { key: 'gallery' as const, href: '#gallery' },
+  { key: 'about' as const, href: '#about' },
+  { key: 'contact' as const, href: '#location' },
 ]
 
 export default function Navbar() {
@@ -50,7 +50,7 @@ export default function Navbar() {
               <a
                 href="#"
                 className="flex flex-col leading-none group"
-                aria-label={`${restaurant.name} — Home`}
+                aria-label={`${restaurant.name} — ${t.nav.ariaHome}`}
               >
                 <span className="font-display text-xl lg:text-2xl font-light text-white tracking-wide group-hover:text-[var(--color-accent)] transition-colors duration-300">
                   {restaurant.logo.text}
@@ -61,14 +61,14 @@ export default function Navbar() {
               </a>
 
               {/* Desktop Nav */}
-              <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
+              <nav className="hidden lg:flex items-center gap-8" aria-label={t.nav.ariaMain}>
                 {navLinks.map((link) => (
                   <button
                     key={link.href}
                     onClick={() => handleNavClick(link.href)}
                     className="text-xs uppercase tracking-[0.2em] text-stone-300 hover:text-[var(--color-accent)] transition-colors duration-300 font-sans font-medium"
                   >
-                    {link.label}
+                    {t.nav[link.key]}
                   </button>
                 ))}
               </nav>
@@ -79,7 +79,7 @@ export default function Navbar() {
                   onClick={() => handleNavClick('#location')}
                   className="btn-primary text-xs py-3 px-6"
                 >
-                  Reserve Table
+                  {t.nav.reserveTable}
                 </button>
               </div>
 
@@ -87,7 +87,7 @@ export default function Navbar() {
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
                 className="lg:hidden p-2 text-white hover:text-[var(--color-accent)] transition-colors"
-                aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+                aria-label={mobileOpen ? t.nav.ariaCloseMenu : t.nav.ariaOpenMenu}
                 aria-expanded={mobileOpen}
               >
                 {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -108,7 +108,7 @@ export default function Navbar() {
             className="fixed inset-0 z-40 bg-[var(--color-surface)] flex flex-col justify-center"
           >
             <div className="section-padding py-20">
-              <nav className="flex flex-col gap-6" aria-label="Mobile navigation">
+              <nav className="flex flex-col gap-6" aria-label={t.nav.ariaMobile}>
                 {navLinks.map((link, i) => (
                   <motion.button
                     key={link.href}
@@ -118,7 +118,7 @@ export default function Navbar() {
                     onClick={() => handleNavClick(link.href)}
                     className="text-left font-display text-3xl font-light text-white hover:text-[var(--color-accent)] transition-colors duration-300"
                   >
-                    {link.label}
+                    {t.nav[link.key]}
                   </motion.button>
                 ))}
               </nav>
@@ -129,7 +129,7 @@ export default function Navbar() {
                 onClick={() => handleNavClick('#location')}
                 className="btn-primary mt-10 w-full justify-center"
               >
-                Reserve Table
+                {t.nav.reserveTable}
               </motion.button>
             </div>
           </motion.div>

@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "packages": "Packages",
+    "gallery": "Gallery",
+    "about": "About",
+    "contact": "Contact",
+    "reserveTable": "Reserve Table",
+    "ariaMain": "Main navigation",
+    "ariaMobile": "Mobile navigation",
+    "ariaOpenMenu": "Open menu",
+    "ariaCloseMenu": "Close menu",
+    "ariaHome": "Home"
+  },
+  "hero": {
+    "reserveTable": "Reserve Table",
+    "exploreMenu": "Explore Menu",
+    "scroll": "Scroll",
+    "ariaSection": "Hero section",
+    "ariaReserve": "Reserve a table",
+    "ariaExploreMenu": "Explore our menu",
+    "ariaScrollDown": "Scroll down"
+  },
+  "signatureDish": {
+    "startingFrom": "starting from",
+    "orderNow": "Order Now",
+    "ariaOrder": "Order this dish"
+  },
+  "about": {
+    "sectionLabel": "Our Story",
+    "ariaKitchen": "kitchen and team"
+  },
+  "menu": {
+    "sectionLabel": "Culinary Experience",
+    "heading": "Our Menu",
+    "description": "Each dish is a carefully curated celebration of Indonesian culinary heritage",
+    "halal": "Halal",
+    "vegetarian": "Veg",
+    "ariaCategories": "Menu categories",
+    "ariaSpicy": "Spicy dish"
+  },
+  "packages": {
+    "sectionLabel": "Catering & Events",
+    "priceFrom": "from",
+    "inquireNow": "Inquire Now",
+    "whatsappMessage": "Hello, I'm interested in the {name} package. Could you provide more information?"
+  },
+  "facilities": {
+    "sectionLabel": "World-Class Spaces",
+    "heading": "Our Facilities",
+    "description": "Every space designed to deliver an extraordinary experience"
+  },
+  "gallery": {
+    "sectionLabel": "Visual Journey",
+    "ariaFilters": "Gallery filters",
+    "ariaViewItem": "View {alt}",
+    "ariaCloseLightbox": "Close lightbox"
+  },
+  "testimonials": {
+    "sectionLabel": "Guest Reviews",
+    "reviews": "reviews",
+    "verified": "Verified",
+    "ariaCarousel": "Customer testimonials",
+    "ariaSlideLabel": "Review by {name}",
+    "ariaGotoReview": "Go to review {num}",
+    "ariaPrev": "Previous review",
+    "ariaNext": "Next review"
+  },
+  "location": {
+    "sectionLabel": "Find Us",
+    "heading": "Visit & Reserve",
+    "address": "Address",
+    "contact": "Contact",
+    "openingHours": "Opening Hours",
+    "reserveTable": "Reserve Table",
+    "whatsapp": "WhatsApp",
+    "ariaMapTitle": "location map",
+    "ariaReserveWA": "Make a reservation via WhatsApp",
+    "ariaWhatsApp": "Chat on WhatsApp"
+  },
+  "cta": {
+    "sectionLabel": "Begin Your Journey",
+    "heading": "Reserve Your Table",
+    "headingAccent": "Tonight",
+    "description": "An extraordinary dining experience awaits. Book your table and let us craft an evening you'll never forget.",
+    "reserveNow": "Reserve Now",
+    "whatsappUs": "WhatsApp Us",
+    "ariaSection": "Call to action",
+    "ariaReserve": "Reserve a table",
+    "ariaWhatsApp": "Contact us on WhatsApp"
+  },
+  "floatingActions": {
+    "whatsapp": "WhatsApp",
+    "callUs": "Call Us",
+    "reserve": "Reserve",
+    "ariaQuickActions": "Quick actions",
+    "ariaWhatsApp": "Chat on WhatsApp",
+    "ariaCall": "Call us",
+    "ariaReserve": "Reserve a table",
+    "ariaScrollTop": "Scroll to top"
+  },
+  "footer": {
+    "contact": "Contact",
+    "openingHours": "Opening Hours",
+    "allRightsReserved": "All rights reserved.",
+    "builtBy": "Premium Restaurant Template — Built for Excellence",
+    "ariaInstagram": "Instagram",
+    "ariaFacebook": "Facebook"
+  }
+}

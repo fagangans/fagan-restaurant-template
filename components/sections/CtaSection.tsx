@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { CalendarDays, MessageCircle } from 'lucide-react'
-import { restaurant, getWhatsAppUrl } from '@/lib/config'
+import { restaurant, getWhatsAppUrl, t } from '@/lib/config'
 import { fadeUp, staggerContainer } from '@/lib/utils'
 
 export default function CtaSection() {
@@ -16,7 +16,7 @@ export default function CtaSection() {
   }
 
   return (
-    <section className="relative py-32 lg:py-40 overflow-hidden" aria-label="Call to action">
+    <section className="relative py-32 lg:py-40 overflow-hidden" aria-label={t.cta.ariaSection}>
       {/* Background */}
       <div className="absolute inset-0">
         <Image
@@ -49,7 +49,7 @@ export default function CtaSection() {
             <motion.div variants={fadeUp} custom={0} className="flex items-center justify-center gap-4 mb-8">
               <span className="divider-line" />
               <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">
-                Begin Your Journey
+                {t.cta.sectionLabel}
               </span>
               <span className="divider-line" />
             </motion.div>
@@ -59,14 +59,14 @@ export default function CtaSection() {
               custom={0.1}
               className="heading-display text-5xl lg:text-6xl xl:text-7xl text-white mb-6"
             >
-              Reserve Your Table
+              {t.cta.heading}
             </motion.h2>
             <motion.h2
               variants={fadeUp}
               custom={0.15}
               className="heading-display text-5xl lg:text-6xl xl:text-7xl gradient-text mb-8"
             >
-              Tonight
+              {t.cta.headingAccent}
             </motion.h2>
 
             <motion.p
@@ -74,7 +74,7 @@ export default function CtaSection() {
               custom={0.25}
               className="text-stone-300 text-lg leading-relaxed mb-12 font-sans font-light"
             >
-              An extraordinary dining experience awaits. Book your table and let us craft an evening you&apos;ll never forget.
+              {t.cta.description}
             </motion.p>
 
             <motion.div
@@ -85,20 +85,20 @@ export default function CtaSection() {
               <button
                 onClick={scrollToReserve}
                 className="btn-primary text-base px-10 py-5 w-full sm:w-auto justify-center"
-                aria-label="Reserve a table"
+                aria-label={t.cta.ariaReserve}
               >
                 <CalendarDays size={18} />
-                Reserve Now
+                {t.cta.reserveNow}
               </button>
               <a
                 href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary text-base px-10 py-5 w-full sm:w-auto justify-center"
-                aria-label="Contact us on WhatsApp"
+                aria-label={t.cta.ariaWhatsApp}
               >
                 <MessageCircle size={18} />
-                WhatsApp Us
+                {t.cta.whatsappUs}
               </a>
             </motion.div>
           </motion.div>

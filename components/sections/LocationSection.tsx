@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { MapPin, Phone, Mail, Clock, MessageCircle, CalendarDays } from 'lucide-react'
-import { restaurant, getWhatsAppUrl } from '@/lib/config'
+import { restaurant, getWhatsAppUrl, t } from '@/lib/config'
 import { fadeUp, staggerContainer } from '@/lib/utils'
 
 export default function LocationSection() {
@@ -32,7 +32,9 @@ export default function LocationSection() {
               className="flex items-center justify-center gap-4 mb-6"
             >
               <span className="divider-line" />
-              <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">Find Us</span>
+              <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">
+                {t.location.sectionLabel}
+              </span>
               <span className="divider-line" />
             </motion.div>
             <motion.h2
@@ -41,7 +43,7 @@ export default function LocationSection() {
               id="location-heading"
               className="heading-display text-4xl lg:text-5xl xl:text-6xl text-white mb-4"
             >
-              Visit & Reserve
+              {t.location.heading}
             </motion.h2>
           </motion.div>
 
@@ -61,7 +63,7 @@ export default function LocationSection() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title={`${restaurant.name} location map`}
+                title={`${restaurant.name} ${t.location.ariaMapTitle}`}
                 className="absolute inset-0"
               />
             </motion.div>
@@ -75,7 +77,7 @@ export default function LocationSection() {
             >
               {/* Address */}
               <div>
-                <h3 className="text-label-lg text-[var(--color-accent)] mb-4">Address</h3>
+                <h3 className="text-label-lg text-[var(--color-accent)] mb-4">{t.location.address}</h3>
                 <div className="flex items-start gap-3">
                   <MapPin size={16} className="text-[var(--color-accent)]/60 mt-0.5 shrink-0" />
                   <p className="text-stone-300 text-sm leading-relaxed">{location.address}</p>
@@ -84,7 +86,7 @@ export default function LocationSection() {
 
               {/* Contact */}
               <div>
-                <h3 className="text-label-lg text-[var(--color-accent)] mb-4">Contact</h3>
+                <h3 className="text-label-lg text-[var(--color-accent)] mb-4">{t.location.contact}</h3>
                 <div className="space-y-3">
                   <a
                     href={`tel:${location.phone}`}
@@ -105,7 +107,7 @@ export default function LocationSection() {
 
               {/* Hours */}
               <div>
-                <h3 className="text-label-lg text-[var(--color-accent)] mb-4">Opening Hours</h3>
+                <h3 className="text-label-lg text-[var(--color-accent)] mb-4">{t.location.openingHours}</h3>
                 <div className="space-y-2.5">
                   {location.hours.map((h, i) => (
                     <div key={i} className="flex items-center gap-3">
@@ -128,20 +130,20 @@ export default function LocationSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary flex-1 justify-center"
-                  aria-label="Make a reservation via WhatsApp"
+                  aria-label={t.location.ariaReserveWA}
                 >
                   <CalendarDays size={16} />
-                  Reserve Table
+                  {t.location.reserveTable}
                 </a>
                 <a
                   href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-secondary flex-1 justify-center"
-                  aria-label="Chat on WhatsApp"
+                  aria-label={t.location.ariaWhatsApp}
                 >
                   <MessageCircle size={16} />
-                  WhatsApp
+                  {t.location.whatsapp}
                 </a>
               </div>
             </motion.div>

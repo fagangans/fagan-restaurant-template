@@ -5,7 +5,8 @@ import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { X, ZoomIn } from 'lucide-react'
-import { gallery } from '@/lib/config'
+import { gallery, t } from '@/lib/config'
+import { interpolate } from '@/lib/i18n'
 import { fadeUp, staggerContainer } from '@/lib/utils'
 
 export default function GallerySection() {
@@ -40,7 +41,9 @@ export default function GallerySection() {
               className="flex items-center justify-center gap-4 mb-6"
             >
               <span className="divider-line" />
-              <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">Visual Journey</span>
+              <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">
+                {t.gallery.sectionLabel}
+              </span>
               <span className="divider-line" />
             </motion.div>
             <motion.h2
@@ -67,7 +70,7 @@ export default function GallerySection() {
             transition={{ delay: 0.3 }}
             className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-2 mb-10 justify-start lg:justify-center"
             role="tablist"
-            aria-label="Gallery filters"
+            aria-label={t.gallery.ariaFilters}
           >
             {gallery.categories.map((cat) => (
               <button
@@ -106,7 +109,7 @@ export default function GallerySection() {
                   onClick={() => setLightboxItem(item)}
                   role="button"
                   tabIndex={0}
-                  aria-label={`View ${item.alt}`}
+                  aria-label={interpolate(t.gallery.ariaViewItem, { alt: item.alt })}
                   onKeyDown={(e) => e.key === 'Enter' && setLightboxItem(item)}
                 >
                   <div
@@ -173,7 +176,7 @@ export default function GallerySection() {
             <button
               onClick={() => setLightboxItem(null)}
               className="absolute top-4 right-4 w-10 h-10 bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
-              aria-label="Close lightbox"
+              aria-label={t.gallery.ariaCloseLightbox}
             >
               <X size={20} />
             </button>

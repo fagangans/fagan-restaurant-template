@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
-import { restaurant } from '@/lib/config'
+import { restaurant, locale } from '@/lib/config'
 import { themes } from '@/lib/themes'
 import type { ThemeName } from '@/lib/themes'
 import SmoothScrollProvider from '@/components/providers/SmoothScrollProvider'
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: seo.description,
     images: [{ url: seo.ogImage, width: 1200, height: 630 }],
     type: 'website',
-    locale: 'id_ID',
+    locale: locale === 'en' ? 'en_US' : 'id_ID',
   },
   twitter: {
     card: 'summary_large_image',
@@ -62,7 +62,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="id"
+      lang={locale}
       className={`${inter.variable} ${playfair.variable} ${cormorant.variable}`}
       style={Object.fromEntries(
         Object.entries(themeVars).map(([k, v]) => [k, v])

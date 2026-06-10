@@ -5,7 +5,8 @@ import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react'
-import { testimonials } from '@/lib/config'
+import { testimonials, t } from '@/lib/config'
+import { interpolate } from '@/lib/i18n'
 import { fadeUp, staggerContainer } from '@/lib/utils'
 
 export default function TestimonialsSection() {
@@ -57,7 +58,9 @@ export default function TestimonialsSection() {
               className="flex items-center justify-center gap-4 mb-6"
             >
               <span className="divider-line" />
-              <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">Guest Reviews</span>
+              <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">
+                {t.testimonials.sectionLabel}
+              </span>
               <span className="divider-line" />
             </motion.div>
             <motion.h2
@@ -89,7 +92,7 @@ export default function TestimonialsSection() {
               </div>
               <span className="font-display text-lg text-white">{testimonials.stats.rating}</span>
               <span className="text-stone-500 text-xs font-sans">
-                {testimonials.stats.totalReviews} reviews · {testimonials.stats.platform}
+                {testimonials.stats.totalReviews} {t.testimonials.reviews} · {testimonials.stats.platform}
               </span>
             </motion.div>
           </motion.div>
@@ -100,7 +103,7 @@ export default function TestimonialsSection() {
               className="overflow-hidden"
               aria-live="polite"
               aria-roledescription="carousel"
-              aria-label="Customer testimonials"
+              aria-label={t.testimonials.ariaCarousel}
             >
               <AnimatePresence mode="wait" custom={direction}>
                 <motion.div
@@ -113,7 +116,7 @@ export default function TestimonialsSection() {
                   transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
                   className="bg-[var(--color-surface-elevated)] border border-white/5 p-8 lg:p-12"
                   aria-roledescription="slide"
-                  aria-label={`Review by ${items[current].name}`}
+                  aria-label={interpolate(t.testimonials.ariaSlideLabel, { name: items[current].name })}
                 >
                   <Quote size={32} className="text-[var(--color-accent)]/30 mb-6" />
 
@@ -139,14 +142,16 @@ export default function TestimonialsSection() {
                     </div>
                     <div>
                       <div className="text-white font-sans font-medium text-sm">{items[current].name}</div>
-                      <div className="text-stone-500 font-sans text-xs mt-0.5">{items[current].role} · {items[current].date}</div>
+                      <div className="text-stone-500 font-sans text-xs mt-0.5">
+                        {items[current].role} · {items[current].date}
+                      </div>
                     </div>
                     {items[current].verified && (
                       <div className="ml-auto flex items-center gap-1.5 text-xs text-stone-600 font-sans">
                         <div className="w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center">
                           <span className="text-white text-[8px]">✓</span>
                         </div>
-                        Verified
+                        {t.testimonials.verified}
                       </div>
                     )}
                   </div>
@@ -161,7 +166,7 @@ export default function TestimonialsSection() {
                   <button
                     key={i}
                     onClick={() => { setDirection(i > current ? 1 : -1); setCurrent(i) }}
-                    aria-label={`Go to review ${i + 1}`}
+                    aria-label={interpolate(t.testimonials.ariaGotoReview, { num: i + 1 })}
                     className={`transition-all duration-300 ${
                       i === current
                         ? 'w-6 h-1.5 bg-[var(--color-accent)]'
@@ -173,14 +178,14 @@ export default function TestimonialsSection() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={prev}
-                  aria-label="Previous review"
+                  aria-label={t.testimonials.ariaPrev}
                   className="w-10 h-10 border border-white/10 flex items-center justify-center text-stone-400 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)]/30 transition-all duration-300"
                 >
                   <ChevronLeft size={18} />
                 </button>
                 <button
                   onClick={next}
-                  aria-label="Next review"
+                  aria-label={t.testimonials.ariaNext}
                   className="w-10 h-10 border border-white/10 flex items-center justify-center text-stone-400 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)]/30 transition-all duration-300"
                 >
                   <ChevronRight size={18} />

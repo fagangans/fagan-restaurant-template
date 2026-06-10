@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Flame } from 'lucide-react'
-import { menu, formatPrice } from '@/lib/config'
+import { menu, formatPrice, t } from '@/lib/config'
 import { fadeUp, staggerContainer } from '@/lib/utils'
 
 export default function MenuSection() {
@@ -28,7 +28,9 @@ export default function MenuSection() {
           >
             <motion.div variants={fadeUp} custom={0} className="flex items-center justify-center gap-4 mb-6">
               <span className="divider-line" />
-              <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">Culinary Experience</span>
+              <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">
+                {t.menu.sectionLabel}
+              </span>
               <span className="divider-line" />
             </motion.div>
             <motion.h2
@@ -37,14 +39,14 @@ export default function MenuSection() {
               id="menu-heading"
               className="heading-display text-4xl lg:text-5xl xl:text-6xl text-white mb-4"
             >
-              Our Menu
+              {t.menu.heading}
             </motion.h2>
             <motion.p
               variants={fadeUp}
               custom={0.2}
               className="text-stone-400 text-base max-w-xl mx-auto font-sans font-light"
             >
-              Each dish is a carefully curated celebration of Indonesian culinary heritage
+              {t.menu.description}
             </motion.p>
           </motion.div>
 
@@ -55,7 +57,7 @@ export default function MenuSection() {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-2 mb-12 justify-start lg:justify-center"
             role="tablist"
-            aria-label="Menu categories"
+            aria-label={t.menu.ariaCategories}
           >
             {menu.categories.map((cat) => (
               <button
@@ -113,7 +115,7 @@ export default function MenuSection() {
                     {item.isSpicy && (
                       <div
                         className="absolute top-3 right-3 w-6 h-6 bg-red-500/90 flex items-center justify-center"
-                        aria-label="Spicy dish"
+                        aria-label={t.menu.ariaSpicy}
                       >
                         <Flame size={12} className="text-white" />
                       </div>
@@ -135,12 +137,12 @@ export default function MenuSection() {
                       <div className="flex items-center gap-1.5">
                         {item.isHalal && (
                           <span className="text-[9px] font-sans text-emerald-400 border border-emerald-400/30 px-1.5 py-0.5 uppercase tracking-[0.1em]">
-                            Halal
+                            {t.menu.halal}
                           </span>
                         )}
                         {item.isVegetarian && (
                           <span className="text-[9px] font-sans text-green-400 border border-green-400/30 px-1.5 py-0.5 uppercase tracking-[0.1em]">
-                            Veg
+                            {t.menu.vegetarian}
                           </span>
                         )}
                       </div>

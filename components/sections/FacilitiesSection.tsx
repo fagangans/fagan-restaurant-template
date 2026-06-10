@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Crown, Users, Trees, Moon, Car, Sparkles } from 'lucide-react'
-import { restaurant } from '@/lib/config'
+import { restaurant, t } from '@/lib/config'
 import { fadeUp, staggerContainer } from '@/lib/utils'
 
 const iconMap = {
@@ -43,7 +43,7 @@ export default function FacilitiesSection() {
             >
               <span className="divider-line" />
               <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">
-                World-Class Spaces
+                {t.facilities.sectionLabel}
               </span>
               <span className="divider-line" />
             </motion.div>
@@ -53,14 +53,14 @@ export default function FacilitiesSection() {
               id="facilities-heading"
               className="heading-display text-4xl lg:text-5xl xl:text-6xl text-white mb-4"
             >
-              Our Facilities
+              {t.facilities.heading}
             </motion.h2>
             <motion.p
               variants={fadeUp}
               custom={0.2}
               className="text-stone-400 text-base max-w-xl mx-auto font-sans font-light"
             >
-              Every space designed to deliver an extraordinary experience
+              {t.facilities.description}
             </motion.p>
           </motion.div>
 

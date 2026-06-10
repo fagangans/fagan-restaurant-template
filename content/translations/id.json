@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "packages": "Paket",
+    "gallery": "Galeri",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "reserveTable": "Reservasi Meja",
+    "ariaMain": "Navigasi utama",
+    "ariaMobile": "Navigasi mobile",
+    "ariaOpenMenu": "Buka menu",
+    "ariaCloseMenu": "Tutup menu",
+    "ariaHome": "Beranda"
+  },
+  "hero": {
+    "reserveTable": "Reservasi Meja",
+    "exploreMenu": "Jelajahi Menu",
+    "scroll": "Gulir",
+    "ariaSection": "Bagian hero",
+    "ariaReserve": "Reservasi meja",
+    "ariaExploreMenu": "Jelajahi menu kami",
+    "ariaScrollDown": "Gulir ke bawah"
+  },
+  "signatureDish": {
+    "startingFrom": "mulai dari",
+    "orderNow": "Pesan Sekarang",
+    "ariaOrder": "Pesan hidangan ini"
+  },
+  "about": {
+    "sectionLabel": "Kisah Kami",
+    "ariaKitchen": "dapur dan tim"
+  },
+  "menu": {
+    "sectionLabel": "Pengalaman Kuliner",
+    "heading": "Menu Kami",
+    "description": "Setiap hidangan adalah perayaan warisan kuliner Indonesia yang dikurasi dengan cermat",
+    "halal": "Halal",
+    "vegetarian": "Veg",
+    "ariaCategories": "Kategori menu",
+    "ariaSpicy": "Hidangan pedas"
+  },
+  "packages": {
+    "sectionLabel": "Katering & Acara",
+    "priceFrom": "mulai",
+    "inquireNow": "Tanya Sekarang",
+    "whatsappMessage": "Halo, saya tertarik dengan paket {name}. Bisa minta informasi lebih lanjut?"
+  },
+  "facilities": {
+    "sectionLabel": "Ruang Kelas Dunia",
+    "heading": "Fasilitas Kami",
+    "description": "Setiap ruang dirancang untuk memberikan pengalaman yang luar biasa"
+  },
+  "gallery": {
+    "sectionLabel": "Perjalanan Visual",
+    "ariaFilters": "Filter galeri",
+    "ariaViewItem": "Lihat {alt}",
+    "ariaCloseLightbox": "Tutup lightbox"
+  },
+  "testimonials": {
+    "sectionLabel": "Ulasan Tamu",
+    "reviews": "ulasan",
+    "verified": "Terverifikasi",
+    "ariaCarousel": "Testimonial pelanggan",
+    "ariaSlideLabel": "Ulasan dari {name}",
+    "ariaGotoReview": "Pergi ke ulasan {num}",
+    "ariaPrev": "Ulasan sebelumnya",
+    "ariaNext": "Ulasan berikutnya"
+  },
+  "location": {
+    "sectionLabel": "Temukan Kami",
+    "heading": "Kunjungi & Reservasi",
+    "address": "Alamat",
+    "contact": "Kontak",
+    "openingHours": "Jam Buka",
+    "reserveTable": "Reservasi Meja",
+    "whatsapp": "WhatsApp",
+    "ariaMapTitle": "peta lokasi",
+    "ariaReserveWA": "Buat reservasi via WhatsApp",
+    "ariaWhatsApp": "Chat di WhatsApp"
+  },
+  "cta": {
+    "sectionLabel": "Mulai Perjalanan Anda",
+    "heading": "Reservasi Meja",
+    "headingAccent": "Malam Ini",
+    "description": "Pengalaman bersantap yang luar biasa menanti. Pesan meja Anda dan biarkan kami merangkai malam yang tidak akan Anda lupakan.",
+    "reserveNow": "Reservasi Sekarang",
+    "whatsappUs": "Hubungi WhatsApp",
+    "ariaSection": "Ajakan bertindak",
+    "ariaReserve": "Reservasi meja",
+    "ariaWhatsApp": "Hubungi kami di WhatsApp"
+  },
+  "floatingActions": {
+    "whatsapp": "WhatsApp",
+    "callUs": "Hubungi",
+    "reserve": "Reservasi",
+    "ariaQuickActions": "Aksi cepat",
+    "ariaWhatsApp": "Chat di WhatsApp",
+    "ariaCall": "Hubungi kami",
+    "ariaReserve": "Reservasi meja",
+    "ariaScrollTop": "Kembali ke atas"
+  },
+  "footer": {
+    "contact": "Kontak",
+    "openingHours": "Jam Buka",
+    "allRightsReserved": "Hak cipta dilindungi.",
+    "builtBy": "Template Restoran Premium — Dibangun untuk Keunggulan",
+    "ariaInstagram": "Instagram",
+    "ariaFacebook": "Facebook"
+  }
+}

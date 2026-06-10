@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Check, ArrowRight, MessageCircle } from 'lucide-react'
-import { packages, formatPrice, getWhatsAppUrl } from '@/lib/config'
+import { Check, MessageCircle } from 'lucide-react'
+import { packages, formatPrice, getWhatsAppUrl, t } from '@/lib/config'
+import { interpolate } from '@/lib/i18n'
 import { fadeUp, staggerContainer } from '@/lib/utils'
 
 function RotatingWord() {
@@ -72,7 +73,7 @@ export default function PackagesSection() {
             >
               <span className="divider-line" />
               <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">
-                Catering & Events
+                {t.packages.sectionLabel}
               </span>
               <span className="divider-line" />
             </motion.div>
@@ -150,7 +151,7 @@ export default function PackagesSection() {
 
                   {/* Price */}
                   <div className="flex items-baseline gap-2 mb-5 pb-5 border-b border-white/5">
-                    <span className="text-label text-stone-600 text-[9px]">from</span>
+                    <span className="text-label text-stone-600 text-[9px]">{t.packages.priceFrom}</span>
                     <span className="font-display text-2xl font-light text-[var(--color-accent)]">
                       {formatPrice(pkg.priceFrom)}
                     </span>
@@ -169,7 +170,7 @@ export default function PackagesSection() {
 
                   <a
                     href={getWhatsAppUrl(
-                      `Halo, saya tertarik dengan paket ${pkg.name}. Bisa minta informasi lebih lanjut?`
+                      interpolate(t.packages.whatsappMessage, { name: pkg.name })
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -180,7 +181,7 @@ export default function PackagesSection() {
                     }`}
                   >
                     <MessageCircle size={14} />
-                    Inquire Now
+                    {t.packages.inquireNow}
                   </a>
                 </div>
               </motion.article>

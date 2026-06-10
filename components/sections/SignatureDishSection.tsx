@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Star, ArrowRight } from 'lucide-react'
-import { restaurant } from '@/lib/config'
+import { restaurant, t } from '@/lib/config'
 import { fadeUp, staggerContainer } from '@/lib/utils'
 
 export default function SignatureDishSection() {
@@ -68,7 +68,7 @@ export default function SignatureDishSection() {
                 className="absolute -bottom-6 -right-4 lg:right-8 bg-[var(--color-accent)] text-[var(--color-surface)] px-6 py-3"
               >
                 <div className="text-label text-[9px] tracking-[0.25em] mb-0.5 opacity-70">
-                  starting from
+                  {t.signatureDish.startingFrom}
                 </div>
                 <div className="font-display text-xl font-light">{signatureDish.price}</div>
               </motion.div>
@@ -128,9 +128,9 @@ export default function SignatureDishSection() {
                 custom={0.4}
                 onClick={handleWhatsApp}
                 className="btn-ghost group"
-                aria-label="Order this dish"
+                aria-label={t.signatureDish.ariaOrder}
               >
-                Order Now
+                {t.signatureDish.orderNow}
                 <ArrowRight
                   size={16}
                   className="group-hover:translate-x-1 transition-transform duration-300"

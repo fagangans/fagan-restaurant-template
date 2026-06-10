@@ -1,5 +1,5 @@
 import { Instagram, Facebook, MapPin, Phone, Mail, Clock } from 'lucide-react'
-import { restaurant } from '@/lib/config'
+import { restaurant, t } from '@/lib/config'
 
 export default function Footer() {
   const { location, name, logo } = restaurant
@@ -26,7 +26,7 @@ export default function Footer() {
                     href={location.socialMedia.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Instagram"
+                    aria-label={t.footer.ariaInstagram}
                     className="w-10 h-10 border border-white/10 flex items-center justify-center text-stone-400 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)]/30 transition-all duration-300"
                   >
                     <Instagram size={16} />
@@ -37,7 +37,7 @@ export default function Footer() {
                     href={location.socialMedia.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Facebook"
+                    aria-label={t.footer.ariaFacebook}
                     className="w-10 h-10 border border-white/10 flex items-center justify-center text-stone-400 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)]/30 transition-all duration-300"
                   >
                     <Facebook size={16} />
@@ -48,7 +48,7 @@ export default function Footer() {
 
             {/* Contact */}
             <div>
-              <h3 className="text-label-lg text-[var(--color-accent)] mb-6">Contact</h3>
+              <h3 className="text-label-lg text-[var(--color-accent)] mb-6">{t.footer.contact}</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3 text-sm text-stone-400">
                   <MapPin size={14} className="mt-1 shrink-0 text-[var(--color-accent)]/60" />
@@ -77,7 +77,7 @@ export default function Footer() {
 
             {/* Hours */}
             <div>
-              <h3 className="text-label-lg text-[var(--color-accent)] mb-6">Opening Hours</h3>
+              <h3 className="text-label-lg text-[var(--color-accent)] mb-6">{t.footer.openingHours}</h3>
               <ul className="space-y-3">
                 {location.hours.map((h, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-stone-400">
@@ -96,10 +96,10 @@ export default function Footer() {
 
           <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-stone-600 text-xs">
-              © {new Date().getFullYear()} {name}. All rights reserved.
+              © {new Date().getFullYear()} {name}. {t.footer.allRightsReserved}
             </p>
             <p className="text-stone-700 text-xs">
-              Premium Restaurant Template — Built for Excellence
+              {t.footer.builtBy}
             </p>
           </div>
         </div>

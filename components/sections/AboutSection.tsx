@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Leaf, Star, Users } from 'lucide-react'
-import { restaurant } from '@/lib/config'
+import { restaurant, t } from '@/lib/config'
 import { fadeUp, staggerContainer } from '@/lib/utils'
 
 const iconMap = { leaf: Leaf, star: Star, users: Users }
@@ -31,7 +31,7 @@ export default function AboutSection() {
               <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
                   src={about.image}
-                  alt={`${restaurant.name} kitchen and team`}
+                  alt={`${restaurant.name} ${t.about.ariaKitchen}`}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
@@ -74,7 +74,9 @@ export default function AboutSection() {
             >
               <motion.div variants={fadeUp} custom={0} className="flex items-center gap-4 mb-6">
                 <span className="divider-line" />
-                <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">Our Story</span>
+                <span className="text-label text-[var(--color-accent)] tracking-[0.3em]">
+                  {t.about.sectionLabel}
+                </span>
               </motion.div>
 
               <motion.h2
