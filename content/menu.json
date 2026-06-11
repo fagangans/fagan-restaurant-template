@@ -3,32 +3,32 @@
     {
       "id": "signature",
       "name": "Signature",
-      "description": "Our chef's most celebrated creations"
+      "description": "Kreasi paling membanggakan dari chef kami"
     },
     {
       "id": "appetizer",
-      "name": "Appetizer",
-      "description": "Light beginnings to awaken the palate"
+      "name": "Pembuka",
+      "description": "Sajian ringan pembuka untuk membangkitkan selera"
     },
     {
       "id": "main",
-      "name": "Main Course",
-      "description": "Heritage recipes reimagined with modern technique"
+      "name": "Hidangan Utama",
+      "description": "Resep warisan yang dihadirkan kembali dengan teknik modern"
     },
     {
       "id": "seafood",
       "name": "Seafood",
-      "description": "Fresh catches prepared with coastal mastery"
+      "description": "Hasil tangkapan segar diolah dengan keahlian masakan pesisir"
     },
     {
       "id": "dessert",
-      "name": "Dessert",
-      "description": "Sweet conclusions to an extraordinary meal"
+      "name": "Penutup",
+      "description": "Penutup manis untuk mengakhiri santapan yang luar biasa"
     },
     {
       "id": "beverage",
-      "name": "Beverage",
-      "description": "Curated drinks to complement every dish"
+      "name": "Minuman",
+      "description": "Pilihan minuman terkurasi untuk melengkapi setiap hidangan"
     }
   ],
   "items": [
@@ -36,7 +36,7 @@
       "id": "1",
       "categoryId": "signature",
       "name": "Rendang Wagyu Premium",
-      "description": "Australian Wagyu beef slow-cooked 8 hours in 23 aromatic spices. Served with steamed rice and pickled vegetables.",
+      "description": "Daging Wagyu Australia dimasak lambat selama 8 jam dalam 23 rempah aromatik. Disajikan dengan nasi putih dan acar sayuran.",
       "price": 285000,
       "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=85",
       "badge": "Best Seller",
@@ -48,10 +48,10 @@
       "id": "2",
       "categoryId": "signature",
       "name": "Lobster Bakar Saus Bumbu",
-      "description": "Whole grilled lobster with a secret blend of Javanese spices and herb butter. A coastal masterpiece.",
+      "description": "Lobster utuh panggang dengan perpaduan rahasia rempah Jawa dan herb butter. Sebuah mahakarya cita rasa pesisir.",
       "price": 450000,
       "image": "https://images.unsplash.com/photo-1559742811-822873691df8?w=600&q=85",
-      "badge": "Chef's Choice",
+      "badge": "Pilihan Chef",
       "isSpicy": false,
       "isHalal": true,
       "isVegetarian": false
@@ -60,7 +60,7 @@
       "id": "3",
       "categoryId": "signature",
       "name": "Ayam Betutu Royal",
-      "description": "Whole free-range chicken marinated in Balinese base genep spices, wrapped in banana leaf and slow-roasted.",
+      "description": "Ayam kampung utuh yang dimarinasi dengan bumbu base genep Bali, dibungkus daun pisang dan dipanggang perlahan.",
       "price": 195000,
       "image": "https://images.unsplash.com/photo-1598103442097-8b74394b95c9?w=600&q=85",
       "badge": "Heritage",
@@ -72,7 +72,7 @@
       "id": "4",
       "categoryId": "appetizer",
       "name": "Soto Betawi Klasik",
-      "description": "Rich coconut milk beef soup with potatoes, tomatoes, emping crackers, and a squeeze of lime.",
+      "description": "Soto daging gurih berkuah santan dengan kentang, tomat, emping, dan perasan jeruk nipis.",
       "price": 65000,
       "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=85",
       "badge": null,
@@ -84,7 +84,7 @@
       "id": "5",
       "categoryId": "appetizer",
       "name": "Gado-Gado Nusantara",
-      "description": "Mixed vegetables and tofu in our signature peanut sauce. Elegant simplicity at its finest.",
+      "description": "Sayuran segar dan tahu dengan saus kacang khas kami. Kesederhanaan elegan dalam setiap suapan.",
       "price": 55000,
       "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=85",
       "badge": "Vegetarian",
@@ -96,7 +96,7 @@
       "id": "6",
       "categoryId": "appetizer",
       "name": "Kerak Telor Premium",
-      "description": "Jakarta's iconic sticky rice omelette with dried shrimp, toasted coconut and shallots.",
+      "description": "Telur dadar nasi ketan khas Jakarta dengan ebi, kelapa sangrai, dan bawang merah.",
       "price": 75000,
       "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=85",
       "badge": "Heritage",
@@ -108,7 +108,7 @@
       "id": "7",
       "categoryId": "main",
       "name": "Nasi Goreng Istana",
-      "description": "Fragrant wok-fried rice with premium shrimp paste, served with satay, crackers and a perfectly fried egg.",
+      "description": "Nasi goreng wangi dengan terasi premium, disajikan bersama sate, kerupuk, dan telur goreng sempurna.",
       "price": 125000,
       "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=85",
       "badge": "Best Seller",
@@ -120,7 +120,7 @@
       "id": "8",
       "categoryId": "main",
       "name": "Sate Maranggi Wagyu",
-      "description": "Premium Wagyu skewers marinated in sweet soy and galangal, grilled over charcoal to perfection.",
+      "description": "Tusukan Wagyu premium dimarinasi kecap manis dan lengkuas, dipanggang di atas arang hingga sempurna.",
       "price": 175000,
       "image": "https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600&q=85",
       "badge": "Premium",
@@ -132,7 +132,7 @@
       "id": "9",
       "categoryId": "main",
       "name": "Gulai Kambing Muda",
-      "description": "Young goat curry in golden turmeric-spiced coconut milk, slow-cooked until the meat falls from the bone.",
+      "description": "Kari kambing muda dalam kuah santan kuning kunyit, dimasak perlahan hingga dagingnya gugur dari tulang.",
       "price": 155000,
       "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=85",
       "badge": null,
@@ -144,10 +144,10 @@
       "id": "10",
       "categoryId": "seafood",
       "name": "Ikan Bakar Jimbaran",
-      "description": "Whole grilled sea bass marinated in Balinese Jimbaran sauce. Served on banana leaf with plecing sambal.",
+      "description": "Ikan kerapu utuh panggang dengan saus Jimbaran khas Bali. Disajikan di atas daun pisang dengan sambal plecing.",
       "price": 220000,
       "image": "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=600&q=85",
-      "badge": "Chef's Choice",
+      "badge": "Pilihan Chef",
       "isSpicy": true,
       "isHalal": true,
       "isVegetarian": false
@@ -156,10 +156,10 @@
       "id": "11",
       "categoryId": "seafood",
       "name": "Udang Galah Saus Padang",
-      "description": "Giant river prawns in a bold Padang-style chili sauce. Rich, complex, and gloriously spicy.",
+      "description": "Udang galah sungai dalam saus cabai gaya Padang yang kuat. Kaya rasa, kompleks, dan pedas menggugah selera.",
       "price": 195000,
       "image": "https://images.unsplash.com/photo-1563557765-5a0b56a0f1d7?w=600&q=85",
-      "badge": "Spicy",
+      "badge": "Pedas",
       "isSpicy": true,
       "isHalal": true,
       "isVegetarian": false
@@ -168,7 +168,7 @@
       "id": "12",
       "categoryId": "seafood",
       "name": "Cumi Cabe Hijau",
-      "description": "Fresh squid stir-fried in aromatic green chili sauce with basil and kaffir lime leaves.",
+      "description": "Cumi segar ditumis dalam saus cabai hijau aromatik dengan daun kemangi dan daun jeruk purut.",
       "price": 145000,
       "image": "https://images.unsplash.com/photo-1607330289024-1535c6b4e1c1?w=600&q=85",
       "badge": null,

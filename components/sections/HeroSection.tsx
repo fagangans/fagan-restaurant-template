@@ -75,7 +75,7 @@ export default function HeroSection() {
             </motion.div>
 
             {/* Headline */}
-            <h1 className="heading-display text-4xl sm:text-5xl lg:text-7xl xl:text-8xl mb-8">
+            <h1 className="heading-display text-4xl sm:text-5xl lg:text-7xl xl:text-8xl mb-8 hero-text-shadow">
               <div className="overflow-hidden mb-2">
                 <motion.span
                   initial={{ y: '100%' }}
@@ -117,14 +117,14 @@ export default function HeroSection() {
             >
               <button
                 onClick={scrollToReserve}
-                className="btn-primary"
+                className="btn-primary btn-luxury-enhance"
                 aria-label={t.hero.ariaReserve}
               >
                 {t.hero.reserveTable}
               </button>
               <button
                 onClick={scrollToMenu}
-                className="btn-secondary"
+                className="btn-secondary btn-luxury-enhance"
                 aria-label={t.hero.ariaExploreMenu}
               >
                 {t.hero.exploreMenu}

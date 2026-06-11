@@ -95,10 +95,10 @@ export default function MenuSection() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.07, duration: 0.5 }}
-                  className="card-elevated group overflow-hidden"
+                  className="card-elevated card-hover group overflow-hidden"
                 >
                   {/* Image */}
-                  <div className="relative aspect-[4/3] overflow-hidden">
+                  <div className="relative aspect-[4/3] img-zoom">
                     <Image
                       src={item.image}
                       alt={item.name}

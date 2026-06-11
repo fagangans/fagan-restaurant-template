@@ -1,109 +1,109 @@
 {
   "nav": {
     "menu": "Menu",
-    "packages": "Packages",
-    "gallery": "Gallery",
-    "about": "About",
-    "contact": "Contact",
-    "reserveTable": "Reserve Table",
-    "ariaMain": "Main navigation",
-    "ariaMobile": "Mobile navigation",
-    "ariaOpenMenu": "Open menu",
-    "ariaCloseMenu": "Close menu",
-    "ariaHome": "Home"
+    "packages": "Paket",
+    "gallery": "Galeri",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "reserveTable": "Reservasi Meja",
+    "ariaMain": "Navigasi utama",
+    "ariaMobile": "Navigasi mobile",
+    "ariaOpenMenu": "Buka menu",
+    "ariaCloseMenu": "Tutup menu",
+    "ariaHome": "Beranda"
   },
   "hero": {
-    "reserveTable": "Reserve Table",
-    "exploreMenu": "Explore Menu",
-    "scroll": "Scroll",
-    "ariaSection": "Hero section",
-    "ariaReserve": "Reserve a table",
-    "ariaExploreMenu": "Explore our menu",
-    "ariaScrollDown": "Scroll down"
+    "reserveTable": "Reservasi Meja",
+    "exploreMenu": "Jelajahi Menu",
+    "scroll": "Gulir",
+    "ariaSection": "Bagian hero",
+    "ariaReserve": "Reservasi meja",
+    "ariaExploreMenu": "Jelajahi menu kami",
+    "ariaScrollDown": "Gulir ke bawah"
   },
   "signatureDish": {
-    "startingFrom": "starting from",
-    "orderNow": "Order Now",
-    "ariaOrder": "Order this dish"
+    "startingFrom": "mulai dari",
+    "orderNow": "Pesan Sekarang",
+    "ariaOrder": "Pesan hidangan ini"
   },
   "about": {
-    "sectionLabel": "Our Story",
-    "ariaKitchen": "kitchen and team"
+    "sectionLabel": "Kisah Kami",
+    "ariaKitchen": "dapur dan tim"
   },
   "menu": {
-    "sectionLabel": "Culinary Experience",
-    "heading": "Our Menu",
-    "description": "Each dish is a carefully curated celebration of Indonesian culinary heritage",
+    "sectionLabel": "Pengalaman Kuliner",
+    "heading": "Menu Kami",
+    "description": "Setiap hidangan adalah perayaan warisan kuliner Indonesia yang dikurasi dengan cermat",
     "halal": "Halal",
     "vegetarian": "Veg",
-    "ariaCategories": "Menu categories",
-    "ariaSpicy": "Spicy dish"
+    "ariaCategories": "Kategori menu",
+    "ariaSpicy": "Hidangan pedas"
   },
   "packages": {
-    "sectionLabel": "Catering & Events",
-    "priceFrom": "from",
-    "inquireNow": "Inquire Now",
-    "whatsappMessage": "Hello, I'm interested in the {name} package. Could you provide more information?"
+    "sectionLabel": "Katering & Acara",
+    "priceFrom": "mulai",
+    "inquireNow": "Tanya Sekarang",
+    "whatsappMessage": "Halo, saya tertarik dengan paket {name}. Bisa minta informasi lebih lanjut?"
   },
   "facilities": {
-    "sectionLabel": "World-Class Spaces",
-    "heading": "Our Facilities",
-    "description": "Every space designed to deliver an extraordinary experience"
+    "sectionLabel": "Ruang Kelas Dunia",
+    "heading": "Fasilitas Kami",
+    "description": "Setiap ruang dirancang untuk memberikan pengalaman yang luar biasa"
   },
   "gallery": {
-    "sectionLabel": "Visual Journey",
-    "ariaFilters": "Gallery filters",
-    "ariaViewItem": "View {alt}",
-    "ariaCloseLightbox": "Close lightbox"
+    "sectionLabel": "Perjalanan Visual",
+    "ariaFilters": "Filter galeri",
+    "ariaViewItem": "Lihat {alt}",
+    "ariaCloseLightbox": "Tutup lightbox"
   },
   "testimonials": {
-    "sectionLabel": "Guest Reviews",
-    "reviews": "reviews",
-    "verified": "Verified",
-    "ariaCarousel": "Customer testimonials",
-    "ariaSlideLabel": "Review by {name}",
-    "ariaGotoReview": "Go to review {num}",
-    "ariaPrev": "Previous review",
-    "ariaNext": "Next review"
+    "sectionLabel": "Ulasan Tamu",
+    "reviews": "ulasan",
+    "verified": "Terverifikasi",
+    "ariaCarousel": "Testimonial pelanggan",
+    "ariaSlideLabel": "Ulasan dari {name}",
+    "ariaGotoReview": "Pergi ke ulasan {num}",
+    "ariaPrev": "Ulasan sebelumnya",
+    "ariaNext": "Ulasan berikutnya"
   },
   "location": {
-    "sectionLabel": "Find Us",
-    "heading": "Visit & Reserve",
-    "address": "Address",
-    "contact": "Contact",
-    "openingHours": "Opening Hours",
-    "reserveTable": "Reserve Table",
+    "sectionLabel": "Temukan Kami",
+    "heading": "Kunjungi & Reservasi",
+    "address": "Alamat",
+    "contact": "Kontak",
+    "openingHours": "Jam Buka",
+    "reserveTable": "Reservasi Meja",
     "whatsapp": "WhatsApp",
-    "ariaMapTitle": "location map",
-    "ariaReserveWA": "Make a reservation via WhatsApp",
-    "ariaWhatsApp": "Chat on WhatsApp"
+    "ariaMapTitle": "peta lokasi",
+    "ariaReserveWA": "Buat reservasi via WhatsApp",
+    "ariaWhatsApp": "Chat di WhatsApp"
   },
   "cta": {
-    "sectionLabel": "Begin Your Journey",
-    "heading": "Reserve Your Table",
-    "headingAccent": "Tonight",
-    "description": "An extraordinary dining experience awaits. Book your table and let us craft an evening you'll never forget.",
-    "reserveNow": "Reserve Now",
-    "whatsappUs": "WhatsApp Us",
-    "ariaSection": "Call to action",
-    "ariaReserve": "Reserve a table",
-    "ariaWhatsApp": "Contact us on WhatsApp"
+    "sectionLabel": "Mulai Perjalanan Anda",
+    "heading": "Reservasi Meja",
+    "headingAccent": "Malam Ini",
+    "description": "Pengalaman bersantap yang luar biasa menanti. Pesan meja Anda dan biarkan kami merangkai malam yang tidak akan Anda lupakan.",
+    "reserveNow": "Reservasi Sekarang",
+    "whatsappUs": "Hubungi WhatsApp",
+    "ariaSection": "Ajakan bertindak",
+    "ariaReserve": "Reservasi meja",
+    "ariaWhatsApp": "Hubungi kami di WhatsApp"
   },
   "floatingActions": {
     "whatsapp": "WhatsApp",
-    "callUs": "Call Us",
-    "reserve": "Reserve",
-    "ariaQuickActions": "Quick actions",
-    "ariaWhatsApp": "Chat on WhatsApp",
-    "ariaCall": "Call us",
-    "ariaReserve": "Reserve a table",
-    "ariaScrollTop": "Scroll to top"
+    "callUs": "Hubungi",
+    "reserve": "Reservasi",
+    "ariaQuickActions": "Aksi cepat",
+    "ariaWhatsApp": "Chat di WhatsApp",
+    "ariaCall": "Hubungi kami",
+    "ariaReserve": "Reservasi meja",
+    "ariaScrollTop": "Kembali ke atas"
   },
   "footer": {
-    "contact": "Contact",
-    "openingHours": "Opening Hours",
-    "allRightsReserved": "All rights reserved.",
-    "builtBy": "Premium Restaurant Template — Built for Excellence",
+    "contact": "Kontak",
+    "openingHours": "Jam Buka",
+    "allRightsReserved": "Hak cipta dilindungi.",
+    "builtBy": "Template Restoran Premium — Dibangun untuk Keunggulan",
     "ariaInstagram": "Instagram",
     "ariaFacebook": "Facebook"
   }

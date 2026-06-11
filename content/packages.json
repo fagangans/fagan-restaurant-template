@@ -8,116 +8,116 @@
     "Wedding",
     "Corporate"
   ],
-  "heading": "We Provide",
-  "subheading": "Premium catering solutions for every occasion — crafted with the same excellence as our restaurant experience.",
+  "heading": "Kami Menyediakan",
+  "subheading": "Solusi katering premium untuk setiap kesempatan — dibuat dengan keunggulan yang sama seperti pengalaman restoran kami.",
   "packages": [
     {
       "id": "prasmanan",
       "name": "Prasmanan Premium",
-      "subtitle": "Buffet Style",
-      "description": "An abundant spread of our finest dishes, elegantly arranged for your guests to serve themselves. Perfect for corporate events and family gatherings.",
+      "subtitle": "Gaya Prasmanan",
+      "description": "Hidangan terbaik kami yang berlimpah, disajikan dengan elegan untuk tamu Anda melayani diri sendiri. Cocok untuk acara perusahaan dan pertemuan keluarga.",
       "priceFrom": 85000,
-      "priceUnit": "per person",
+      "priceUnit": "per orang",
       "minGuests": 50,
       "image": "https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=85",
       "highlight": false,
       "features": [
-        "Minimum 50 persons",
-        "15 dish selections",
-        "Professional serving staff",
-        "Complete cutlery setup",
-        "2 dessert options",
-        "Free site survey"
+        "Minimum 50 orang",
+        "15 pilihan hidangan",
+        "Staf pelayanan profesional",
+        "Perlengkapan makan lengkap",
+        "2 pilihan dessert",
+        "Survei lokasi gratis"
       ],
-      "includes": ["Setup & teardown", "Serving staff", "Equipment rental", "Basic decoration"]
+      "includes": ["Pemasangan & pembongkaran", "Staf pelayanan", "Sewa peralatan", "Dekorasi dasar"]
     },
     {
       "id": "set-menu",
       "name": "Set Menu Eksklusif",
-      "subtitle": "Plated Service",
-      "description": "A curated multi-course dining experience brought directly to your guests. Elegant plated service for sophisticated events.",
+      "subtitle": "Layanan Plated",
+      "description": "Pengalaman makan multi-course yang dikurasi dan disajikan langsung kepada tamu Anda. Layanan plated yang elegan untuk acara berkelas.",
       "priceFrom": 145000,
-      "priceUnit": "per person",
+      "priceUnit": "per orang",
       "minGuests": 30,
       "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=85",
       "highlight": true,
-      "badge": "Most Popular",
+      "badge": "Paling Populer",
       "features": [
-        "Minimum 30 persons",
-        "4-course meal",
-        "Dedicated service team",
-        "Premium plating",
-        "Menu consultation",
-        "Complimentary welcome drink"
+        "Minimum 30 orang",
+        "Makan 4 course",
+        "Tim pelayanan khusus",
+        "Plating premium",
+        "Konsultasi menu",
+        "Minuman sambutan gratis"
       ],
-      "includes": ["Full service team", "Premium tableware", "Menu cards", "Table decoration"]
+      "includes": ["Tim pelayanan penuh", "Peralatan makan premium", "Kartu menu", "Dekorasi meja"]
     },
     {
       "id": "coffee-break",
       "name": "Coffee Break Package",
-      "subtitle": "Meeting & Conference",
-      "description": "Refined refreshments for meetings, seminars, and conferences. Keep your attendees energized and impressed.",
+      "subtitle": "Rapat & Konferensi",
+      "description": "Hidangan ringan yang elegan untuk rapat, seminar, dan konferensi. Jaga peserta Anda tetap bersemangat dan terkesan.",
       "priceFrom": 55000,
-      "priceUnit": "per person",
+      "priceUnit": "per orang",
       "minGuests": 20,
       "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=85",
       "highlight": false,
       "features": [
-        "Minimum 20 persons",
-        "Hot & cold beverages",
-        "5 snack selections",
-        "Replenishment service",
-        "Napkins & plates",
-        "2-session option available"
+        "Minimum 20 orang",
+        "Minuman panas & dingin",
+        "5 pilihan camilan",
+        "Layanan pengisian ulang",
+        "Serbet & piring",
+        "Tersedia opsi 2 sesi"
       ],
-      "includes": ["Beverage station", "Snack display", "Service staff", "Setup & cleanup"]
+      "includes": ["Stasiun minuman", "Tampilan camilan", "Staf pelayanan", "Pemasangan & pembersihan"]
     },
     {
       "id": "nasi-kotak",
       "name": "Nasi Kotak Signature",
-      "subtitle": "Box Meal",
-      "description": "Our signature box meals, beautifully packaged and bursting with flavor. Ideal for large-scale events with logistical simplicity.",
+      "subtitle": "Makanan Kotak",
+      "description": "Nasi kotak andalan kami, dikemas dengan indah dan penuh cita rasa. Ideal untuk acara berskala besar dengan kemudahan logistik.",
       "priceFrom": 45000,
-      "priceUnit": "per box",
+      "priceUnit": "per kotak",
       "minGuests": 100,
       "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=85",
       "highlight": false,
       "features": [
-        "Minimum 100 boxes",
-        "Main + 3 side dishes",
-        "Premium eco packaging",
-        "Free delivery (area)",
-        "Custom label printing",
-        "Temperature guaranteed"
+        "Minimum 100 kotak",
+        "Nasi + 3 lauk pauk",
+        "Kemasan ramah lingkungan premium",
+        "Pengiriman gratis (area tertentu)",
+        "Cetak label khusus",
+        "Suhu terjamin"
       ],
-      "includes": ["Branded packaging", "Delivery (radius 15km)", "Custom branding", "Halal certified"]
+      "includes": ["Kemasan bermerek", "Pengiriman (radius 15km)", "Branding khusus", "Bersertifikat Halal"]
     },
     {
       "id": "wedding",
       "name": "Wedding Package",
-      "subtitle": "Celebration",
-      "description": "Make your most important day truly unforgettable. Our wedding package combines exquisite cuisine with flawless service.",
+      "subtitle": "Perayaan",
+      "description": "Jadikan hari terpenting Anda benar-benar tak terlupakan. Paket pernikahan kami memadukan masakan istimewa dengan pelayanan sempurna.",
       "priceFrom": 225000,
-      "priceUnit": "per person",
+      "priceUnit": "per orang",
       "minGuests": 100,
       "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=85",
       "highlight": false,
       "badge": "Premium",
       "features": [
-        "Minimum 100 persons",
-        "Full buffet or set menu",
-        "Dedicated wedding coordinator",
-        "Floral centerpieces",
-        "Wedding cake (optional)",
-        "Sound system included"
+        "Minimum 100 orang",
+        "Prasmanan penuh atau set menu",
+        "Koordinator pernikahan khusus",
+        "Centerpiece bunga",
+        "Kue pengantin (opsional)",
+        "Sistem suara termasuk"
       ],
-      "includes": ["Full decoration", "Sound system", "Lighting setup", "Coordinator", "Photo spots"]
+      "includes": ["Dekorasi penuh", "Sistem suara", "Pemasangan pencahayaan", "Koordinator", "Spot foto"]
     }
   ],
   "cta": {
-    "heading": "Custom Package Available",
-    "description": "Don't see exactly what you need? Our events team will create a bespoke package tailored to your vision and budget.",
-    "buttonText": "Discuss Your Event",
+    "heading": "Paket Khusus Tersedia",
+    "description": "Tidak menemukan yang Anda butuhkan? Tim acara kami akan membuat paket yang disesuaikan dengan visi dan anggaran Anda.",
+    "buttonText": "Diskusikan Acara Anda",
     "whatsappMessage": "Halo, saya ingin mendiskusikan paket catering untuk acara saya."
   }
 }

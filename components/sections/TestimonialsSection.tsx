@@ -123,15 +123,16 @@ export default function TestimonialsSection() {
                   animate="center"
                   exit="exit"
                   transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-                  className="bg-[var(--color-surface-elevated)] border border-white/5 p-8 lg:p-12"
+                  className="relative bg-[var(--color-surface-elevated)] border border-white/5 p-8 lg:p-12 overflow-hidden"
                   aria-roledescription="slide"
                   aria-label={interpolate(t.testimonials.ariaSlideLabel, { name: items[current].name })}
                 >
-                  <Quote size={32} className="text-[var(--color-accent)]/30 mb-6" />
+                  <span className="quote-decoration" aria-hidden="true">&ldquo;</span>
+                  <Quote size={40} className="text-[var(--color-accent)]/40 mb-6" />
 
                   <div className="flex items-center gap-1 mb-6">
                     {[...Array(items[current].rating)].map((_, i) => (
-                      <Star key={i} size={14} className="text-yellow-400 fill-yellow-400" />
+                      <Star key={i} size={18} className="text-yellow-400 fill-yellow-400 drop-shadow-sm" />
                     ))}
                   </div>
 
@@ -140,7 +141,7 @@ export default function TestimonialsSection() {
                   </blockquote>
 
                   <div className="flex items-center gap-4">
-                    <div className="relative w-12 h-12 overflow-hidden rounded-full border border-white/10">
+                    <div className="relative w-12 h-12 overflow-hidden rounded-full border-2 border-[var(--color-accent)]/40">
                       <Image
                         src={items[current].avatar}
                         alt={items[current].name}

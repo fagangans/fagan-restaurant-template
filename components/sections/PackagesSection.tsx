@@ -25,10 +25,10 @@ function RotatingWord() {
       <AnimatePresence mode="wait">
         <motion.span
           key={current}
-          initial={{ y: '100%', opacity: 0 }}
-          animate={{ y: '0%', opacity: 1 }}
-          exit={{ y: '-100%', opacity: 0 }}
-          transition={{ duration: 0.55, ease: [0.25, 0.46, 0.45, 0.94] }}
+          initial={{ y: '100%', opacity: 0, scale: 0.88 }}
+          animate={{ y: '0%', opacity: 1, scale: 1 }}
+          exit={{ y: '-100%', opacity: 0, scale: 1.08 }}
+          transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="absolute inset-0 flex items-center gradient-text"
         >
           {words[current]}
@@ -111,7 +111,7 @@ export default function PackagesSection() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.4 + i * 0.1, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className={`relative overflow-hidden group ${
+                className={`relative overflow-hidden group card-hover ${
                   pkg.highlight
                     ? 'ring-1 ring-[var(--color-accent)]/50'
                     : 'border border-white/5 hover:border-[var(--color-accent)]/20'
@@ -203,7 +203,7 @@ export default function PackagesSection() {
               href={getWhatsAppUrl(packages.cta.whatsappMessage)}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary inline-flex"
+              className="btn-primary btn-luxury-enhance inline-flex"
             >
               <MessageCircle size={16} />
               {packages.cta.buttonText}

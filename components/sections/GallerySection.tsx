@@ -145,11 +145,14 @@ export default function GallerySection() {
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                       quality={80}
                     />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="w-10 h-10 bg-white/10 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-400">
+                      <div className="w-10 h-10 bg-white/10 backdrop-blur-sm border border-white/40 flex items-center justify-center mb-2">
                         <ZoomIn size={18} className="text-white" />
                       </div>
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
+                      <p className="text-white text-[10px] font-sans uppercase tracking-[0.15em] line-clamp-1">{item.alt}</p>
                     </div>
                   </div>
                 </motion.div>

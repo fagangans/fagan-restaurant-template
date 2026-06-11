@@ -74,7 +74,7 @@ export default function Navbar() {
                   <button
                     key={link.href}
                     onClick={() => handleNavClick(link.href)}
-                    className="text-xs uppercase tracking-[0.2em] text-stone-300 hover:text-[var(--color-accent)] transition-colors duration-300 font-sans font-medium"
+                    className="text-xs uppercase tracking-[0.2em] text-stone-300 hover:text-[var(--color-accent)] transition-colors duration-300 font-sans font-medium underline-reveal"
                   >
                     {t.nav[link.key]}
                   </button>
@@ -85,7 +85,7 @@ export default function Navbar() {
               <div className="hidden lg:flex items-center gap-4">
                 <button
                   onClick={() => handleNavClick('#location')}
-                  className="btn-primary text-xs py-3 px-6"
+                  className="btn-primary btn-luxury-enhance text-xs py-3 px-6"
                 >
                   {t.nav.reserveTable}
                 </button>
