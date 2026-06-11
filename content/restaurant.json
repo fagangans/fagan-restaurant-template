@@ -1,9 +1,9 @@
 {
   "language": "id",
   "name": "Nusantara Dining",
-  "tagline": "Where Heritage Meets Refinement",
-  "description": "An extraordinary culinary journey through Indonesia's finest flavors, presented with modern elegance and timeless hospitality.",
-  "shortDescription": "Premium Indonesian cuisine in an elegant setting",
+  "tagline": "Di Mana Warisan Bertemu Keanggunan",
+  "description": "Perjalanan kuliner luar biasa melalui cita rasa terbaik Nusantara, disajikan dengan keanggunan modern dan keramahan yang abadi.",
+  "shortDescription": "Masakan Indonesia premium dalam suasana yang elegan dan berkesan",
   "theme": "steakhouse",
   "logo": {
     "text": "Nusantara",
@@ -11,105 +11,105 @@
     "image": null
   },
   "hero": {
-    "headline": "An Extraordinary",
-    "headlineAccent": "Culinary Journey",
-    "subheadline": "Experience the finest Indonesian cuisine, meticulously crafted from heritage recipes and the freshest local ingredients.",
+    "headline": "Perjalanan Kuliner",
+    "headlineAccent": "Yang Luar Biasa",
+    "subheadline": "Rasakan cita rasa masakan Indonesia terbaik, diracik dengan penuh keahlian dari resep warisan leluhur dan bahan-bahan lokal pilihan terbaik.",
     "backgroundImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=90",
     "backgroundImageMobile": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=768&q=85"
   },
   "signatureDish": {
     "enabled": true,
     "name": "Rendang Wagyu Premium",
-    "subtitle": "Signature Collection",
-    "description": "Tender Australian Wagyu beef slow-cooked for 8 hours in a rich blend of 23 aromatic spices. A culinary masterpiece that honors centuries of Minangkabau tradition.",
+    "subtitle": "Koleksi Andalan",
+    "description": "Daging Wagyu Australia yang empuk dimasak selama 8 jam dalam perpaduan kaya 23 rempah aromatik pilihan. Sebuah mahakarya kuliner yang menghormati tradisi Minangkabau berabad-abad.",
     "price": "Rp 285.000",
     "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&q=90",
-    "badges": ["Chef's Favorite", "8 Hours Slow-Cooked", "Premium Wagyu"]
+    "badges": ["Favorit Chef", "Dimasak 8 Jam", "Wagyu Premium"]
   },
   "about": {
-    "heading": "A Story of Passion",
-    "headingAccent": "& Heritage",
-    "story": "Founded in 2018 by Chef Arief Santoso, Nusantara Dining was born from a singular vision: to elevate Indonesian cuisine to its rightful place among the world's great culinary traditions.",
-    "mission": "We believe that every dish tells a story — of the farmers who grew the ingredients, the generations who perfected the recipes, and the artisans who bring it all to life in our kitchen.",
+    "heading": "Kisah Penuh Gairah",
+    "headingAccent": "& Warisan",
+    "story": "Didirikan pada 2018 oleh Chef Arief Santoso, Nusantara Dining lahir dari satu visi tunggal: mengangkat masakan Indonesia ke tempat yang semestinya di antara tradisi kuliner terbaik dunia.",
+    "mission": "Kami percaya setiap hidangan bercerita — tentang para petani yang menanam bahan-bahannya, generasi yang menyempurnakan resepnya, dan para pengrajin yang menghidupkannya di dapur kami.",
     "values": [
       {
         "icon": "leaf",
-        "title": "Farm-to-Table",
-        "description": "We partner with 40+ local farms across Java and Bali"
+        "title": "Langsung dari Ladang",
+        "description": "Kami bermitra dengan 40+ pertanian lokal di seluruh Jawa dan Bali"
       },
       {
         "icon": "star",
-        "title": "Heritage Recipes",
-        "description": "Authentic recipes passed down through generations"
+        "title": "Resep Warisan",
+        "description": "Resep autentik yang diwariskan turun-temurun dari generasi ke generasi"
       },
       {
         "icon": "users",
-        "title": "Expert Team",
-        "description": "15 award-winning chefs with international training"
+        "title": "Tim Berpengalaman",
+        "description": "15 chef penghargaan internasional dengan pelatihan di kelas dunia"
       }
     ],
     "image": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200&q=90",
     "stats": [
-      { "number": "8+", "label": "Years of Excellence" },
-      { "number": "50K+", "label": "Happy Guests" },
-      { "number": "23", "label": "Heritage Spices" },
-      { "number": "40+", "label": "Farm Partners" }
+      { "number": "8+", "label": "Tahun Keunggulan" },
+      { "number": "50K+", "label": "Tamu Puas" },
+      { "number": "23", "label": "Rempah Warisan" },
+      { "number": "40+", "label": "Mitra Pertanian" }
     ]
   },
   "facilities": [
     {
       "id": "vip-room",
-      "name": "VIP Private Dining",
-      "description": "Intimate private rooms for exclusive gatherings, corporate dinners, and special celebrations.",
-      "capacity": "Up to 20 guests",
+      "name": "Ruang Makan VIP Pribadi",
+      "description": "Ruang privat yang intim untuk pertemuan eksklusif, makan malam korporat, dan perayaan istimewa.",
+      "capacity": "Hingga 20 tamu",
       "icon": "crown",
       "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=85",
-      "features": ["Private entrance", "Dedicated butler service", "Custom menu", "AV equipment"]
+      "features": ["Pintu masuk pribadi", "Layanan butler khusus", "Menu kustom", "Peralatan AV"]
     },
     {
       "id": "family-area",
-      "name": "Family Dining Hall",
-      "description": "Spacious, warm ambience designed for family gatherings with comfortable seating for all ages.",
-      "capacity": "Up to 150 guests",
+      "name": "Aula Makan Keluarga",
+      "description": "Suasana hangat dan luas yang dirancang untuk berkumpul bersama keluarga dengan tempat duduk nyaman untuk segala usia.",
+      "capacity": "Hingga 150 tamu",
       "icon": "users",
       "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=85",
-      "features": ["Kids menu available", "High chairs", "Spacious layout", "Natural lighting"]
+      "features": ["Menu anak tersedia", "Kursi bayi", "Tata ruang luas", "Pencahayaan alami"]
     },
     {
       "id": "outdoor",
-      "name": "Garden Terrace",
-      "description": "Al fresco dining surrounded by lush tropical gardens. Perfect for romantic dinners and relaxed lunches.",
-      "capacity": "Up to 60 guests",
+      "name": "Teras Taman",
+      "description": "Makan di luar ruangan dikelilingi taman tropis yang rimbun. Sempurna untuk makan malam romantis dan makan siang santai.",
+      "capacity": "Hingga 60 tamu",
       "icon": "trees",
       "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=85",
-      "features": ["Open air", "Garden views", "Natural ambience", "Twilight dining"]
+      "features": ["Udara terbuka", "Pemandangan taman", "Suasana alami", "Makan malam senja"]
     },
     {
       "id": "prayer-room",
-      "name": "Prayer Room",
-      "description": "A clean, serene space for our Muslim guests to perform their prayers in comfort and peace.",
-      "capacity": "Up to 15 persons",
+      "name": "Ruang Ibadah",
+      "description": "Ruang bersih dan tenang bagi tamu Muslim kami untuk melaksanakan ibadah sholat dengan nyaman dan khusyuk.",
+      "capacity": "Hingga 15 orang",
       "icon": "moon",
       "image": "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=85",
-      "features": ["Prayer mats provided", "Ablution area", "Qibla direction marked", "Private space"]
+      "features": ["Sajadah tersedia", "Area wudhu", "Arah kiblat ditandai", "Ruang pribadi"]
     },
     {
       "id": "parking",
-      "name": "Ample Parking",
-      "description": "Secure, spacious parking for over 100 vehicles with valet service available upon request.",
-      "capacity": "100+ vehicles",
+      "name": "Area Parkir Luas",
+      "description": "Parkir aman dan luas untuk lebih dari 100 kendaraan dengan layanan valet yang tersedia sesuai permintaan.",
+      "capacity": "100+ kendaraan",
       "icon": "car",
       "image": "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800&q=85",
-      "features": ["Free parking", "Valet service", "CCTV monitored", "Easy access"]
+      "features": ["Parkir gratis", "Layanan valet", "Pantauan CCTV", "Akses mudah"]
     },
     {
       "id": "event-hall",
-      "name": "Grand Event Hall",
-      "description": "A magnificent venue for weddings, corporate events, and grand celebrations with full audio-visual support.",
-      "capacity": "Up to 500 guests",
+      "name": "Aula Acara Grand",
+      "description": "Venue megah untuk pernikahan, acara korporat, dan perayaan besar dengan dukungan audio-visual lengkap.",
+      "capacity": "Hingga 500 tamu",
       "icon": "sparkles",
       "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=85",
-      "features": ["Full AV system", "Stage & podium", "Dedicated coordinator", "Custom decoration"]
+      "features": ["Sistem AV lengkap", "Panggung & podium", "Koordinator khusus", "Dekorasi kustom"]
     }
   ],
   "location": {
@@ -119,22 +119,22 @@
     "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322295!2d106.8195613!3d-6.1944491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sMonas!5e0!3m2!1sen!2sid!4v1699999999999!5m2!1sen!2sid",
     "phone": "+62 21 1234 5678",
     "whatsapp": "+6281234567890",
-    "email": "reservations@nusantaradining.com",
+    "email": "reservasi@nusantaradining.com",
     "hours": [
       {
-        "days": "Monday – Friday",
+        "days": "Senin – Jumat",
         "schemaOrgDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         "open": "11:00",
         "close": "22:00"
       },
       {
-        "days": "Saturday",
+        "days": "Sabtu",
         "schemaOrgDays": ["Saturday"],
         "open": "10:00",
         "close": "23:00"
       },
       {
-        "days": "Sunday",
+        "days": "Minggu",
         "schemaOrgDays": ["Sunday"],
         "open": "10:00",
         "close": "21:00"
@@ -147,9 +147,9 @@
     }
   },
   "seo": {
-    "title": "Nusantara Dining — Premium Indonesian Restaurant Jakarta",
-    "description": "Experience Indonesia's finest heritage cuisine in an elegant setting. Reserve your table at Nusantara Dining, Jakarta's premier destination for authentic Indonesian flavors.",
-    "keywords": "restaurant jakarta, indonesian cuisine, premium dining, catering jakarta, nusantara dining",
+    "title": "Nusantara Dining — Restoran Indonesia Premium Jakarta",
+    "description": "Rasakan masakan warisan Indonesia terbaik dalam suasana elegan. Reservasi meja Anda di Nusantara Dining, destinasi utama cita rasa Indonesia autentik di Jakarta.",
+    "keywords": "restoran jakarta, masakan indonesia, fine dining, katering jakarta, nusantara dining",
     "ogImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=90",
     "siteUrl": "",
     "servesCuisine": "Indonesian",

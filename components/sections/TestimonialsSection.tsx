@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react'
+import { Star, ChevronLeft, ChevronRight } from 'lucide-react'
 import { testimonials, t } from '@/lib/config'
 import { interpolate } from '@/lib/i18n'
 import { fadeUp, staggerContainer } from '@/lib/utils'
@@ -39,18 +39,21 @@ export default function TestimonialsSection() {
   }, [next])
 
   const variants = {
-    enter: (d: number) => ({ opacity: 0, x: d * 40 }),
-    center: { opacity: 1, x: 0 },
-    exit: (d: number) => ({ opacity: 0, x: d * -40 }),
+    enter: (d: number) => ({ opacity: 0, x: d * 50, scale: 0.98 }),
+    center: { opacity: 1, x: 0, scale: 1 },
+    exit: (d: number) => ({ opacity: 0, x: d * -50, scale: 0.98 }),
   }
 
   return (
     <section
       id="testimonials"
-      className="py-24 lg:py-32 bg-[var(--color-surface)]"
+      className="py-24 lg:py-32 bg-[var(--color-surface)] relative overflow-hidden"
       aria-labelledby="testimonials-heading"
     >
-      <div className="section-padding">
+      {/* Subtle background */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_100%,color-mix(in_srgb,var(--color-accent)_4%,transparent),transparent)] pointer-events-none" />
+
+      <div className="relative section-padding">
         <div className="section-max-width">
           {/* Header */}
           <motion.div
@@ -91,14 +94,14 @@ export default function TestimonialsSection() {
             <motion.div
               variants={fadeUp}
               custom={0.3}
-              className="inline-flex items-center gap-3 mt-6 bg-[var(--color-surface-elevated)] border border-white/5 px-5 py-3"
+              className="inline-flex items-center gap-3 mt-6 bg-[var(--color-surface-elevated)] border border-white/8 px-6 py-3.5"
             >
               <div className="flex items-center gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={12} className="text-yellow-400 fill-yellow-400" />
+                  <Star key={i} size={13} className="text-yellow-400 fill-yellow-400" />
                 ))}
               </div>
-              <span className="font-display text-lg text-white">{testimonials.stats.rating}</span>
+              <span className="font-display text-xl text-white">{testimonials.stats.rating}</span>
               <span className="text-stone-500 text-xs font-sans">
                 {testimonials.stats.totalReviews} {t.testimonials.reviews} · {testimonials.stats.platform}
               </span>
@@ -107,6 +110,11 @@ export default function TestimonialsSection() {
 
           {/* Carousel */}
           <div className="relative max-w-3xl mx-auto">
+            {/* Large decorative quote mark */}
+            <div className="absolute -top-6 -left-4 lg:-left-8 select-none pointer-events-none" aria-hidden="true">
+              <span className="quote-mark-decor">&ldquo;</span>
+            </div>
+
             <div
               role="region"
               className="overflow-hidden"
@@ -122,25 +130,26 @@ export default function TestimonialsSection() {
                   initial="enter"
                   animate="center"
                   exit="exit"
-                  transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-                  className="bg-[var(--color-surface-elevated)] border border-white/5 p-8 lg:p-12"
+                  transition={{ duration: 0.55, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  className="bg-[var(--color-surface-elevated)] border border-white/5 p-8 lg:p-12 relative"
                   aria-roledescription="slide"
                   aria-label={interpolate(t.testimonials.ariaSlideLabel, { name: items[current].name })}
                 >
-                  <Quote size={32} className="text-[var(--color-accent)]/30 mb-6" />
-
+                  {/* Stars */}
                   <div className="flex items-center gap-1 mb-6">
                     {[...Array(items[current].rating)].map((_, i) => (
-                      <Star key={i} size={14} className="text-yellow-400 fill-yellow-400" />
+                      <Star key={i} size={15} className="text-yellow-400 fill-yellow-400" />
                     ))}
                   </div>
 
+                  {/* Review text */}
                   <blockquote className="font-serif text-lg lg:text-xl text-stone-200 leading-relaxed mb-8 font-light italic">
                     &ldquo;{items[current].review}&rdquo;
                   </blockquote>
 
+                  {/* Author */}
                   <div className="flex items-center gap-4">
-                    <div className="relative w-12 h-12 overflow-hidden rounded-full border border-white/10">
+                    <div className="relative w-12 h-12 overflow-hidden rounded-full avatar-gold shrink-0">
                       <Image
                         src={items[current].avatar}
                         alt={items[current].name}
@@ -150,15 +159,15 @@ export default function TestimonialsSection() {
                       />
                     </div>
                     <div>
-                      <div className="text-white font-sans font-medium text-sm">{items[current].name}</div>
+                      <div className="text-white font-sans font-semibold text-sm">{items[current].name}</div>
                       <div className="text-stone-500 font-sans text-xs mt-0.5">
                         {items[current].role} · {items[current].date}
                       </div>
                     </div>
                     {items[current].verified && (
-                      <div className="ml-auto flex items-center gap-1.5 text-xs text-stone-600 font-sans">
-                        <div className="w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center">
-                          <span className="text-white text-[8px]">✓</span>
+                      <div className="ml-auto flex items-center gap-1.5 text-xs text-stone-500 font-sans">
+                        <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center shadow-[0_0_8px_rgba(59,130,246,0.5)]">
+                          <span className="text-white text-[9px] font-bold">✓</span>
                         </div>
                         {t.testimonials.verified}
                       </div>
@@ -176,10 +185,10 @@ export default function TestimonialsSection() {
                     key={i}
                     onClick={() => { setDirection(i > current ? 1 : -1); setCurrent(i) }}
                     aria-label={interpolate(t.testimonials.ariaGotoReview, { num: i + 1 })}
-                    className={`transition-all duration-300 ${
+                    className={`transition-all duration-400 rounded-full ${
                       i === current
-                        ? 'w-6 h-1.5 bg-[var(--color-accent)]'
-                        : 'w-1.5 h-1.5 bg-white/20 hover:bg-white/40'
+                        ? 'w-8 h-2 bg-[var(--color-accent)]'
+                        : 'w-2 h-2 bg-white/20 hover:bg-white/40'
                     }`}
                   />
                 ))}
@@ -188,14 +197,14 @@ export default function TestimonialsSection() {
                 <button
                   onClick={prev}
                   aria-label={t.testimonials.ariaPrev}
-                  className="w-10 h-10 border border-white/10 flex items-center justify-center text-stone-400 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)]/30 transition-all duration-300"
+                  className="w-11 h-11 border border-white/10 flex items-center justify-center text-stone-400 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)]/40 transition-all duration-300 hover:-translate-x-0.5"
                 >
                   <ChevronLeft size={18} />
                 </button>
                 <button
                   onClick={next}
                   aria-label={t.testimonials.ariaNext}
-                  className="w-10 h-10 border border-white/10 flex items-center justify-center text-stone-400 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)]/30 transition-all duration-300"
+                  className="w-11 h-11 border border-white/10 flex items-center justify-center text-stone-400 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)]/40 transition-all duration-300 hover:translate-x-0.5"
                 >
                   <ChevronRight size={18} />
                 </button>

@@ -1,6 +1,6 @@
 {
-  "heading": "What Our Guests Say",
-  "subheading": "Over 50,000 guests have experienced our hospitality. Here are some of their stories.",
+  "heading": "Apa Kata Tamu Kami",
+  "subheading": "Lebih dari 50.000 tamu telah merasakan keramahan kami. Inilah sebagian kisah mereka.",
   "items": [
     {
       "id": "1",
@@ -8,8 +8,8 @@
       "role": "Food Blogger",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
       "rating": 5,
-      "review": "The Rendang Wagyu is unlike anything I've ever tasted. 8 hours of slow-cooking is evident in every single bite. This is Indonesian cuisine elevated to its absolute pinnacle.",
-      "date": "2 weeks ago",
+      "review": "Rendang Wagyu-nya tidak seperti yang pernah saya coba sebelumnya. Proses memasak 8 jam terasa nyata di setiap suapan. Inilah masakan Indonesia yang diangkat ke puncak tertingginya.",
+      "date": "2 minggu yang lalu",
       "platform": "Google",
       "verified": true
     },
@@ -19,19 +19,19 @@
       "role": "Event Organizer",
       "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80",
       "rating": 5,
-      "review": "We've used Nusantara for three corporate events now. The catering team is impeccably professional, the food quality is consistently excellent, and they always go above and beyond.",
-      "date": "1 month ago",
+      "review": "Kami sudah menggunakan Nusantara untuk tiga acara korporat. Tim katering mereka sangat profesional, kualitas makanan selalu konsisten istimewa, dan mereka selalu melampaui ekspektasi.",
+      "date": "1 bulan yang lalu",
       "platform": "Google",
       "verified": true
     },
     {
       "id": "3",
       "name": "Budi Santoso",
-      "role": "Restaurant Critic",
+      "role": "Kritikus Kuliner",
       "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80",
       "rating": 5,
-      "review": "The atmosphere alone is worth visiting for. But the food? It's a masterclass in Indonesian culinary heritage. The Ayam Betutu was perfection — spiced with extraordinary depth.",
-      "date": "3 weeks ago",
+      "review": "Atmosfernya saja sudah layak untuk dikunjungi. Tapi soal makanan? Ini adalah mahakarya warisan kuliner Indonesia. Ayam Betutu-nya sempurna — dibumbui dengan kedalaman rasa yang luar biasa.",
+      "date": "3 minggu yang lalu",
       "platform": "Google",
       "verified": true
     },
@@ -41,37 +41,37 @@
       "role": "Wedding Planner",
       "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80",
       "rating": 5,
-      "review": "Our wedding reception was absolutely perfect. The team coordinated everything flawlessly. Guests are still talking about the food two months later. Truly a 5-star experience.",
-      "date": "2 months ago",
+      "review": "Resepsi pernikahan kami berjalan dengan sempurna. Tim mengkoordinasikan segalanya tanpa cela. Para tamu masih membicarakan makanannya dua bulan kemudian. Benar-benar pengalaman bintang lima.",
+      "date": "2 bulan yang lalu",
       "platform": "Google",
       "verified": true
     },
     {
       "id": "5",
       "name": "Rizal Hakim",
-      "role": "Regular Guest",
+      "role": "Pelanggan Setia",
       "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80",
       "rating": 5,
-      "review": "I bring every out-of-town guest here. It never fails to impress. The Garden Terrace at sunset is magical, and the Lobster Bakar is my personal must-order every single time.",
-      "date": "1 week ago",
+      "review": "Saya selalu membawa setiap tamu dari luar kota ke sini. Tidak pernah mengecewakan. Teras Taman saat matahari terbenam itu magis, dan Lobster Bakar adalah menu wajib saya setiap kali datang.",
+      "date": "1 minggu yang lalu",
       "platform": "Google",
       "verified": true
     },
     {
       "id": "6",
       "name": "Putri Ananda",
-      "role": "Food Enthusiast",
+      "role": "Pecinta Kuliner",
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80",
       "rating": 5,
-      "review": "The VIP private dining room is stunning. We celebrated our anniversary here and it was absolutely perfect. Impeccable service, extraordinary food, unforgettable evening.",
-      "date": "5 days ago",
+      "review": "Ruang makan VIP pribadinya menakjubkan. Kami merayakan ulang tahun pernikahan di sini dan rasanya sungguh sempurna. Pelayanan impeccable, makanan luar biasa, malam yang tidak terlupakan.",
+      "date": "5 hari yang lalu",
       "platform": "Google",
       "verified": true
     }
   ],
   "stats": {
     "rating": "4.9",
-    "totalReviews": "2,847",
+    "totalReviews": "2.847",
     "platform": "Google Reviews"
   }
 }

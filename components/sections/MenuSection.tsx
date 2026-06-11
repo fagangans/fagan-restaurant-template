@@ -50,7 +50,7 @@ export default function MenuSection() {
             </motion.p>
           </motion.div>
 
-          {/* Category Nav */}
+          {/* Category Nav — with active indicator */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -66,13 +66,20 @@ export default function MenuSection() {
                 aria-selected={activeCategory === cat.id}
                 aria-controls={`menu-panel-${cat.id}`}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`relative shrink-0 px-6 py-3 text-xs font-sans uppercase tracking-[0.15em] transition-all duration-300 ${
+                className={`relative shrink-0 px-6 py-3 text-xs font-sans uppercase tracking-[0.15em] transition-all duration-300 min-h-[44px] ${
                   activeCategory === cat.id
                     ? 'text-[var(--color-surface)] bg-[var(--color-accent)]'
-                    : 'text-stone-400 border border-white/10 hover:border-[var(--color-accent)]/30 hover:text-white'
+                    : 'text-stone-400 border border-white/10 hover:border-[var(--color-accent)]/40 hover:text-white'
                 }`}
               >
                 {cat.name}
+                {activeCategory === cat.id && (
+                  <motion.div
+                    layoutId="activeTab"
+                    className="absolute inset-0 bg-[var(--color-accent)] -z-10"
+                    transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  />
+                )}
               </button>
             ))}
           </motion.div>
@@ -107,6 +114,8 @@ export default function MenuSection() {
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                       quality={80}
                     />
+                    {/* Hover image overlay */}
+                    <div className="absolute inset-0 bg-[var(--color-accent)]/0 group-hover:bg-[var(--color-accent)]/5 transition-colors duration-500" />
                     {item.badge && (
                       <div className="absolute top-3 left-3 bg-[var(--color-accent)] text-[var(--color-surface)] text-[9px] font-sans uppercase tracking-[0.15em] font-semibold px-2.5 py-1">
                         {item.badge}
@@ -123,25 +132,25 @@ export default function MenuSection() {
                   </div>
 
                   {/* Info */}
-                  <div className="p-4">
+                  <div className="p-5">
                     <h3 className="font-serif text-white text-base font-medium mb-1.5 leading-snug">
                       {item.name}
                     </h3>
-                    <p className="text-stone-500 text-xs leading-relaxed font-sans mb-3 line-clamp-2">
+                    <p className="text-stone-500 text-xs leading-relaxed font-sans mb-4 line-clamp-2">
                       {item.description}
                     </p>
                     <div className="flex items-center justify-between">
-                      <span className="font-sans text-[var(--color-accent)] font-semibold text-sm">
+                      <span className="font-display text-lg font-light text-[var(--color-accent)]">
                         {formatPrice(item.price)}
                       </span>
                       <div className="flex items-center gap-1.5">
                         {item.isHalal && (
-                          <span className="text-[9px] font-sans text-emerald-400 border border-emerald-400/30 px-1.5 py-0.5 uppercase tracking-[0.1em]">
+                          <span className="text-[9px] font-sans text-emerald-400 border border-emerald-400/30 px-2 py-0.5 uppercase tracking-[0.1em]">
                             {t.menu.halal}
                           </span>
                         )}
                         {item.isVegetarian && (
-                          <span className="text-[9px] font-sans text-green-400 border border-green-400/30 px-1.5 py-0.5 uppercase tracking-[0.1em]">
+                          <span className="text-[9px] font-sans text-green-400 border border-green-400/30 px-2 py-0.5 uppercase tracking-[0.1em]">
                             {t.menu.vegetarian}
                           </span>
                         )}

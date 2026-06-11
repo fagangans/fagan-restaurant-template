@@ -8,8 +8,8 @@
     "reserveTable": "Reservasi Meja",
     "ariaMain": "Navigasi utama",
     "ariaMobile": "Navigasi mobile",
-    "ariaOpenMenu": "Buka menu",
-    "ariaCloseMenu": "Tutup menu",
+    "ariaOpenMenu": "Buka menu navigasi",
+    "ariaCloseMenu": "Tutup menu navigasi",
     "ariaHome": "Beranda"
   },
   "hero": {
@@ -17,7 +17,7 @@
     "exploreMenu": "Jelajahi Menu",
     "scroll": "Gulir",
     "ariaSection": "Bagian hero",
-    "ariaReserve": "Reservasi meja",
+    "ariaReserve": "Reservasi meja sekarang",
     "ariaExploreMenu": "Jelajahi menu kami",
     "ariaScrollDown": "Gulir ke bawah"
   },
@@ -28,12 +28,12 @@
   },
   "about": {
     "sectionLabel": "Kisah Kami",
-    "ariaKitchen": "dapur dan tim"
+    "ariaKitchen": "dapur dan tim kami"
   },
   "menu": {
     "sectionLabel": "Pengalaman Kuliner",
     "heading": "Menu Kami",
-    "description": "Setiap hidangan adalah perayaan warisan kuliner Indonesia yang dikurasi dengan cermat",
+    "description": "Setiap hidangan adalah perayaan warisan kuliner Nusantara yang dikurasi dengan penuh cinta dan keahlian",
     "halal": "Halal",
     "vegetarian": "Veg",
     "ariaCategories": "Kategori menu",
@@ -46,21 +46,21 @@
     "whatsappMessage": "Halo, saya tertarik dengan paket {name}. Bisa minta informasi lebih lanjut?"
   },
   "facilities": {
-    "sectionLabel": "Ruang Kelas Dunia",
+    "sectionLabel": "Ruang Berkelas Dunia",
     "heading": "Fasilitas Kami",
-    "description": "Setiap ruang dirancang untuk memberikan pengalaman yang luar biasa"
+    "description": "Setiap ruang dirancang untuk menghadirkan pengalaman yang luar biasa bagi setiap tamu"
   },
   "gallery": {
     "sectionLabel": "Perjalanan Visual",
     "ariaFilters": "Filter galeri",
     "ariaViewItem": "Lihat {alt}",
-    "ariaCloseLightbox": "Tutup lightbox"
+    "ariaCloseLightbox": "Tutup tampilan gambar"
   },
   "testimonials": {
     "sectionLabel": "Ulasan Tamu",
     "reviews": "ulasan",
     "verified": "Terverifikasi",
-    "ariaCarousel": "Testimonial pelanggan",
+    "ariaCarousel": "Testimoni pelanggan",
     "ariaSlideLabel": "Ulasan dari {name}",
     "ariaGotoReview": "Pergi ke ulasan {num}",
     "ariaPrev": "Ulasan sebelumnya",
@@ -74,19 +74,19 @@
     "openingHours": "Jam Buka",
     "reserveTable": "Reservasi Meja",
     "whatsapp": "WhatsApp",
-    "ariaMapTitle": "peta lokasi",
-    "ariaReserveWA": "Buat reservasi via WhatsApp",
-    "ariaWhatsApp": "Chat di WhatsApp"
+    "ariaMapTitle": "peta lokasi restoran",
+    "ariaReserveWA": "Buat reservasi melalui WhatsApp",
+    "ariaWhatsApp": "Chat melalui WhatsApp"
   },
   "cta": {
     "sectionLabel": "Mulai Perjalanan Anda",
     "heading": "Reservasi Meja",
     "headingAccent": "Malam Ini",
-    "description": "Pengalaman bersantap yang luar biasa menanti. Pesan meja Anda dan biarkan kami merangkai malam yang tidak akan Anda lupakan.",
+    "description": "Pengalaman bersantap yang luar biasa menanti Anda. Pesan meja Anda dan biarkan kami merangkai malam yang tak terlupakan.",
     "reserveNow": "Reservasi Sekarang",
-    "whatsappUs": "Hubungi WhatsApp",
+    "whatsappUs": "Hubungi via WhatsApp",
     "ariaSection": "Ajakan bertindak",
-    "ariaReserve": "Reservasi meja",
+    "ariaReserve": "Reservasi meja sekarang",
     "ariaWhatsApp": "Hubungi kami di WhatsApp"
   },
   "floatingActions": {
@@ -95,16 +95,16 @@
     "reserve": "Reservasi",
     "ariaQuickActions": "Aksi cepat",
     "ariaWhatsApp": "Chat di WhatsApp",
-    "ariaCall": "Hubungi kami",
+    "ariaCall": "Hubungi kami via telepon",
     "ariaReserve": "Reservasi meja",
-    "ariaScrollTop": "Kembali ke atas"
+    "ariaScrollTop": "Kembali ke atas halaman"
   },
   "footer": {
     "contact": "Kontak",
     "openingHours": "Jam Buka",
-    "allRightsReserved": "Hak cipta dilindungi.",
+    "allRightsReserved": "Hak cipta dilindungi undang-undang.",
     "builtBy": "Template Restoran Premium — Dibangun untuk Keunggulan",
-    "ariaInstagram": "Instagram",
-    "ariaFacebook": "Facebook"
+    "ariaInstagram": "Kunjungi Instagram kami",
+    "ariaFacebook": "Kunjungi Facebook kami"
   }
 }

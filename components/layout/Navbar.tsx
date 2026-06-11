@@ -28,8 +28,16 @@ export default function Navbar() {
     const handler = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setMobileOpen(false)
     }
-    if (mobileOpen) document.addEventListener('keydown', handler)
-    return () => document.removeEventListener('keydown', handler)
+    if (mobileOpen) {
+      document.addEventListener('keydown', handler)
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.removeEventListener('keydown', handler)
+      document.body.style.overflow = ''
+    }
   }, [mobileOpen])
 
   const handleNavClick = (href: string) => {
@@ -47,7 +55,7 @@ export default function Navbar() {
         className={cn(
           'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
           scrolled
-            ? 'bg-[var(--color-surface)]/95 backdrop-blur-md border-b border-white/5'
+            ? 'bg-[var(--color-surface)]/90 backdrop-blur-xl border-b border-white/8 shadow-[0_4px_30px_rgba(0,0,0,0.3)]'
             : 'bg-transparent'
         )}
       >
@@ -60,7 +68,7 @@ export default function Navbar() {
                 className="flex flex-col leading-none group"
                 aria-label={`${restaurant.name} — ${t.nav.ariaHome}`}
               >
-                <span className="font-display text-xl lg:text-2xl font-light text-white tracking-wide group-hover:text-[var(--color-accent)] transition-colors duration-300">
+                <span className="font-display text-xl lg:text-2xl font-light text-white tracking-wide group-hover:text-[var(--color-accent)] transition-colors duration-400">
                   {restaurant.logo.text}
                 </span>
                 <span className="text-label text-[var(--color-accent)] text-[8px] tracking-[0.35em]">
@@ -74,7 +82,7 @@ export default function Navbar() {
                   <button
                     key={link.href}
                     onClick={() => handleNavClick(link.href)}
-                    className="text-xs uppercase tracking-[0.2em] text-stone-300 hover:text-[var(--color-accent)] transition-colors duration-300 font-sans font-medium"
+                    className="nav-link text-xs uppercase tracking-[0.2em] text-stone-300 hover:text-[var(--color-accent)] transition-colors duration-300 font-sans font-medium py-2"
                   >
                     {t.nav[link.key]}
                   </button>
@@ -94,7 +102,7 @@ export default function Navbar() {
               {/* Mobile Menu Toggle */}
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
-                className="lg:hidden p-2 text-white hover:text-[var(--color-accent)] transition-colors"
+                className="lg:hidden p-3 text-white hover:text-[var(--color-accent)] transition-colors touch-target flex items-center justify-center"
                 aria-label={mobileOpen ? t.nav.ariaCloseMenu : t.nav.ariaOpenMenu}
                 aria-expanded={mobileOpen}
               >
@@ -112,28 +120,42 @@ export default function Navbar() {
             initial={{ opacity: 0, x: '100%' }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
-            transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="fixed inset-0 z-40 bg-[var(--color-surface)] flex flex-col justify-center"
+            transition={{ duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="fixed inset-0 z-40 bg-[var(--color-surface)]/98 backdrop-blur-xl flex flex-col justify-center"
           >
+            {/* Close button */}
+            <button
+              onClick={() => setMobileOpen(false)}
+              className="absolute top-5 right-5 p-3 text-stone-400 hover:text-white transition-colors touch-target"
+              aria-label={t.nav.ariaCloseMenu}
+            >
+              <X size={24} />
+            </button>
+
             <div className="section-padding py-20">
-              <nav className="flex flex-col gap-6" aria-label={t.nav.ariaMobile}>
+              <nav className="flex flex-col gap-2" aria-label={t.nav.ariaMobile}>
                 {navLinks.map((link, i) => (
                   <motion.button
                     key={link.href}
-                    initial={{ opacity: 0, x: 30 }}
+                    initial={{ opacity: 0, x: 40 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: i * 0.07 + 0.1 }}
+                    transition={{ delay: i * 0.07 + 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
                     onClick={() => handleNavClick(link.href)}
-                    className="text-left font-display text-3xl font-light text-white hover:text-[var(--color-accent)] transition-colors duration-300"
+                    className="text-left font-display text-4xl sm:text-5xl font-light text-white hover:text-[var(--color-accent)] transition-colors duration-300 py-3 border-b border-white/5 last:border-0"
                   >
-                    {t.nav[link.key]}
+                    <span className="block">
+                      <span className="text-[var(--color-accent)]/40 text-sm font-sans uppercase tracking-[0.2em] mr-4">
+                        0{i + 1}
+                      </span>
+                      {t.nav[link.key]}
+                    </span>
                   </motion.button>
                 ))}
               </nav>
               <motion.button
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.45 }}
+                transition={{ delay: 0.5 }}
                 onClick={() => handleNavClick('#location')}
                 className="btn-primary mt-10 w-full justify-center"
               >
