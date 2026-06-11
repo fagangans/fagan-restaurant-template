@@ -50,7 +50,7 @@ export default function HeroSection() {
           quality={90}
         />
         {/* Cinematic overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-[var(--color-surface)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-[var(--color-surface)]" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent" />
       </motion.div>
 
@@ -75,7 +75,7 @@ export default function HeroSection() {
             </motion.div>
 
             {/* Headline */}
-            <h1 className="heading-display text-4xl sm:text-5xl lg:text-7xl xl:text-8xl mb-8 hero-text-shadow">
+            <h1 className="heading-display heading-luxury text-4xl sm:text-5xl lg:text-7xl xl:text-8xl mb-8 hero-text-shadow">
               <div className="overflow-hidden mb-2">
                 <motion.span
                   initial={{ y: '100%' }}
@@ -117,7 +117,7 @@ export default function HeroSection() {
             >
               <button
                 onClick={scrollToReserve}
-                className="btn-primary btn-luxury-enhance"
+                className="btn-primary btn-luxury-enhance btn-luxury"
                 aria-label={t.hero.ariaReserve}
               >
                 {t.hero.reserveTable}

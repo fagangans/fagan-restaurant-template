@@ -123,7 +123,7 @@ export default function TestimonialsSection() {
                   animate="center"
                   exit="exit"
                   transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-                  className="relative bg-[var(--color-surface-elevated)] border border-white/5 p-8 lg:p-12 overflow-hidden"
+                  className="relative bg-[var(--color-surface-elevated)] border border-white/5 p-8 lg:p-12 overflow-hidden card-hover"
                   aria-roledescription="slide"
                   aria-label={interpolate(t.testimonials.ariaSlideLabel, { name: items[current].name })}
                 >

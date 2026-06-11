@@ -1,11 +1,11 @@
 {
-  "heading": "Pesta untuk Mata",
-  "subheading": "Setiap hidangan adalah sebuah karya seni. Setiap momen, kenangan yang layak untuk diingat.",
+  "heading": "Sajian untuk Mata",
+  "subheading": "Setiap hidangan adalah karya seni. Setiap momen, kenangan yang layak diabadikan.",
   "items": [
     {
       "id": "1",
       "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=85",
-      "alt": "Suasana ruang makan yang elegan",
+      "alt": "Suasana ruang makan elegan",
       "category": "ambience",
       "span": "large"
     },
@@ -19,14 +19,14 @@
     {
       "id": "3",
       "image": "https://images.unsplash.com/photo-1559742811-822873691df8?w=600&q=85",
-      "alt": "Lobster panggang dengan bumbu rempah",
+      "alt": "Lobster panggang dengan bumbu",
       "category": "food",
       "span": "small"
     },
     {
       "id": "4",
       "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=85",
-      "alt": "Ruang makan privat VIP",
+      "alt": "Ruang makan VIP pribadi",
       "category": "ambience",
       "span": "medium"
     },
@@ -47,7 +47,7 @@
     {
       "id": "7",
       "image": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&q=85",
-      "alt": "Chef sedang mempersiapkan hidangan",
+      "alt": "Chef menyiapkan hidangan",
       "category": "kitchen",
       "span": "large"
     },
@@ -68,30 +68,30 @@
     {
       "id": "10",
       "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=85",
-      "alt": "Penataan acara pernikahan",
+      "alt": "Dekorasi acara pernikahan",
       "category": "events",
       "span": "medium"
     },
     {
       "id": "11",
       "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=85",
-      "alt": "Klepon dessert",
+      "alt": "Dessert klepon",
       "category": "food",
       "span": "small"
     },
     {
       "id": "12",
       "image": "https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=85",
-      "alt": "Catering buffet setup",
+      "alt": "Buffet katering",
       "category": "events",
       "span": "medium"
     }
   ],
   "categories": [
-    { "id": "all", "name": "All" },
-    { "id": "food", "name": "Food" },
-    { "id": "ambience", "name": "Ambience" },
-    { "id": "kitchen", "name": "Kitchen" },
-    { "id": "events", "name": "Events" }
+    { "id": "all", "name": "Semua" },
+    { "id": "food", "name": "Makanan" },
+    { "id": "ambience", "name": "Suasana" },
+    { "id": "kitchen", "name": "Dapur" },
+    { "id": "events", "name": "Acara" }
   ]
 }

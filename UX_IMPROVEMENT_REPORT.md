@@ -1,4 +1,4 @@
-# UX Improvement Report — Nusantara Dining Template
+# UX Improvement Report
 
 **Date:** 2026-06-11  
 **Scope:** Luxury UX Transformation + Full Indonesian Translation  

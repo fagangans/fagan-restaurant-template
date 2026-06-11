@@ -203,7 +203,7 @@ export default function PackagesSection() {
               href={getWhatsAppUrl(packages.cta.whatsappMessage)}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary btn-luxury-enhance inline-flex"
+              className="btn-primary btn-luxury-enhance btn-luxury inline-flex"
             >
               <MessageCircle size={16} />
               {packages.cta.buttonText}
