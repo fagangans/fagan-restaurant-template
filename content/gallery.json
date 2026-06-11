@@ -1,11 +1,11 @@
 {
-  "heading": "A Feast for the Eyes",
-  "subheading": "Every dish is a work of art. Every moment, a memory worth keeping.",
+  "heading": "Pesta untuk Mata",
+  "subheading": "Setiap hidangan adalah sebuah karya seni. Setiap momen, kenangan yang layak untuk diingat.",
   "items": [
     {
       "id": "1",
       "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=85",
-      "alt": "Elegant dining room ambience",
+      "alt": "Suasana ruang makan yang elegan",
       "category": "ambience",
       "span": "large"
     },
@@ -19,21 +19,21 @@
     {
       "id": "3",
       "image": "https://images.unsplash.com/photo-1559742811-822873691df8?w=600&q=85",
-      "alt": "Lobster grilled with spices",
+      "alt": "Lobster panggang dengan bumbu rempah",
       "category": "food",
       "span": "small"
     },
     {
       "id": "4",
       "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=85",
-      "alt": "VIP private dining room",
+      "alt": "Ruang makan privat VIP",
       "category": "ambience",
       "span": "medium"
     },
     {
       "id": "5",
       "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=85",
-      "alt": "Restaurant interior",
+      "alt": "Interior restoran",
       "category": "ambience",
       "span": "medium"
     },
@@ -47,7 +47,7 @@
     {
       "id": "7",
       "image": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&q=85",
-      "alt": "Chef preparing a dish",
+      "alt": "Chef sedang mempersiapkan hidangan",
       "category": "kitchen",
       "span": "large"
     },
@@ -61,14 +61,14 @@
     {
       "id": "9",
       "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=85",
-      "alt": "Garden terrace dining",
+      "alt": "Makan malam di teras taman",
       "category": "ambience",
       "span": "small"
     },
     {
       "id": "10",
       "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=85",
-      "alt": "Wedding event setup",
+      "alt": "Penataan acara pernikahan",
       "category": "events",
       "span": "medium"
     },
