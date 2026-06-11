@@ -3,9 +3,9 @@
     "menu": "Menu",
     "packages": "Paket",
     "gallery": "Galeri",
-    "about": "Tentang",
+    "about": "Tentang Kami",
     "contact": "Kontak",
-    "reserveTable": "Reservasi Meja",
+    "reserveTable": "Pesan Sekarang",
     "ariaMain": "Navigasi utama",
     "ariaMobile": "Navigasi mobile",
     "ariaOpenMenu": "Buka menu",
@@ -13,8 +13,8 @@
     "ariaHome": "Beranda"
   },
   "hero": {
-    "reserveTable": "Reservasi Meja",
-    "exploreMenu": "Jelajahi Menu",
+    "reserveTable": "Pesan Sekarang",
+    "exploreMenu": "Lihat Menu",
     "scroll": "Gulir",
     "ariaSection": "Bagian hero",
     "ariaReserve": "Reservasi meja",
@@ -33,7 +33,7 @@
   "menu": {
     "sectionLabel": "Pengalaman Kuliner",
     "heading": "Menu Kami",
-    "description": "Setiap hidangan adalah perayaan warisan kuliner Indonesia yang dikurasi dengan cermat",
+    "description": "Setiap hidangan adalah perayaan warisan kuliner Indonesia yang dikurasi dengan penuh cinta",
     "halal": "Halal",
     "vegetarian": "Veg",
     "ariaCategories": "Kategori menu",
@@ -46,7 +46,7 @@
     "whatsappMessage": "Halo, saya tertarik dengan paket {name}. Bisa minta informasi lebih lanjut?"
   },
   "facilities": {
-    "sectionLabel": "Ruang Kelas Dunia",
+    "sectionLabel": "Fasilitas Kelas Dunia",
     "heading": "Fasilitas Kami",
     "description": "Setiap ruang dirancang untuk memberikan pengalaman yang luar biasa"
   },
@@ -72,7 +72,7 @@
     "address": "Alamat",
     "contact": "Kontak",
     "openingHours": "Jam Buka",
-    "reserveTable": "Reservasi Meja",
+    "reserveTable": "Pesan Sekarang",
     "whatsapp": "WhatsApp",
     "ariaMapTitle": "peta lokasi",
     "ariaReserveWA": "Buat reservasi via WhatsApp",
