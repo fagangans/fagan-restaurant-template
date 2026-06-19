@@ -119,6 +119,11 @@ export default function RootLayout({
         <SmoothScrollProvider>
           {children}
         </SmoothScrollProvider>
+        <script
+  src="http://localhost:3001/widget/chat-widget.js"
+  data-widget-key="04ac3359-5ef7-4ab0-ba7d-ee71f744e984"
+  data-api-url="http://localhost:3001/api/chat"
+></script>
       </body>
     </html>
   )
